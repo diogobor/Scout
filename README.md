@@ -20,7 +20,7 @@ Here, we present **Scout**, a computational methodology that enables interactomi
 # Procedures
 
 1. **Software installation:**<br/>
-  1.1 Download Scout by clicking on [Scout_setup_64bit.msi](https://github.com/diogobor/Scout/releases/download/1.2.2/Scout_setup_1_2_2_64bit.msi)
+  1.1 Download Scout by clicking on <i>Scout_setup_64bit.msi</i> in the [latest release](https://github.com/diogobor/Scout/releases/).
   <br/>1.2 Install it by double-clicking the previous downloaded file.
 
 1. **Workflow:**<br/>
