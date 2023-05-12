@@ -10,7 +10,7 @@ Here, we present **Scout**, a computational methodology that enables interactomi
 ## Software
 -	Windows 10 (64 bits) or later.
 -	Python 3.10 or later.
--	The .NET 6 framework.
+-	The .NET Core 6.
 -	The Scout software, available for download at https://github.com/diogobor/Scout/releases
 
 ## Data files
