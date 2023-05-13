@@ -36,7 +36,7 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
 &emsp;&emsp;PROTEINSEQUENCE<br/>
 <br/>
       &emsp;Click on <i>‘Start’</i> button to initiate the search by using the default parameters. Once the search is complete, the results page will open (see item <i>2.3</i>).<br/><br/>
-      &emsp;2.2.4 <b>Search Parameters</b><br/>
+      &emsp;<div id="search_params">2.2.4 <b>Search Parameters</b><br/></div>
       Search parameters can be adjusted to optimize the search process. To modify the parameters, navigate to Utils &#8594; Parameters &#8594; Search (or press ALT + S), as illustrated in <b>Figure 2a</b>, a new window will open (<b>Figure 2b</b>).
       Search parameters can be adjusted to optimize the search process. To modify the parameters, navigate to Utils &#8594; Parameters &#8594; Search (or press ALT + S), as illustrated in <b>Figure 2a</b>, a new window will open (<b>Figure 2b</b>).
       <p align="center"><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/662c77a9-f88f-4fa5-9cba-d449c3ba575f"><br/>
@@ -143,7 +143,8 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
       &emsp;&emsp;2.2.5.9. <i>As default: Similar to 2.2.4.19.</i><br/>
       &emsp;&emsp;2.2.5.10. <i>Restore: Similar to 2.2.4.20.</i><br/><br/>
       &emsp;2.2.6. <i>Export log</i>: the whole log information can be exported by going to Tools &#8594; Export log (or pressing ALT + M).<br/><br/>
-  2.3. <b>Results</b><br/>
+  2.3. <b>Results</b>
+  <a href="https://github.com/diogobor/Scout/tree/main#search_params">mzIdentML 1.2</a><br/>
 &emsp;&emsp;Upon completion of the search processing, the results are automatically saved in the same directory in which the RAW files are (<i><sup>*</sup>.scout file</i>) and presented in a new window with separate tabs: CSMs, Residue Pairs and PPIs, as well as the parameters used in the search. (<b>Figure 9</b>)
       <p align="center"><img width="65%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/148bf408-7bf1-449d-bca8-c92093523733"><br/>
       <b>Figure 9: Results window.</b></p>
