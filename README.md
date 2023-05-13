@@ -144,7 +144,7 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
       &emsp;&emsp;2.2.5.10. <i>Restore: Similar to 2.2.4.20.</i><br/><br/>
       &emsp;2.2.6. <i>Export log</i>: the whole log information can be exported by going to Tools &#8594; Export log (or pressing ALT + M).<br/><br/>
   2.3. <b>Results</b>
-  <a href="https://github.com/diogobor/Scout/tree/main#search_params">mzIdentML 1.2</a><br/>
+  <a href="#search_params">mzIdentML 1.2</a><br/>
 &emsp;&emsp;Upon completion of the search processing, the results are automatically saved in the same directory in which the RAW files are (<i><sup>*</sup>.scout file</i>) and presented in a new window with separate tabs: CSMs, Residue Pairs and PPIs, as well as the parameters used in the search. (<b>Figure 9</b>)
       <p align="center"><img width="65%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/148bf408-7bf1-449d-bca8-c92093523733"><br/>
       <b>Figure 9: Results window.</b></p>
