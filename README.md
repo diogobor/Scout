@@ -52,7 +52,7 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
       &emsp;&emsp;2.2.4.7. <i>Max. Peptide Mass</i>: Specify the maximum peptide mass in Daltons.<br/>
       &emsp;&emsp;2.2.4.8. <i>Missed Cleavages</i>: Specify the maximum missed cleavages allowed in a single peptide.<br/>
       &emsp;&emsp;2.2.4.9. <i>Max. Variable Mods</i>: Specify the maximum number of variable post-translational modifications in a single peptide.
-      <div id="ref_2_2_4_10">&emsp;&emsp;2.2.4.10. <i> Enzyme</i>: Select a proteolytic enzyme for in-silico digestion.</div>
+      <div id="ref_2_2_4_10">&emsp;&emsp;2.2.4.10. <i> Enzyme</i>: Select a proteolytic enzyme for <i>in-silico</i> digestion.</div>
       &emsp;&emsp;&emsp;&emsp;2.2.4.10.1. <i> Add Enzyme</i>: Navigate to the <i>Enzymes</i> tab and click on ‘<i>Add Enzyme</i>’ button (<b>Figure 3a</b>). A new window will be opened (<b>Figure 3b</b>).<br/>
       <p align="center"><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/14ee608a-dafa-464f-be3c-d01003b3c83f"><br/>
       <b>Figure 3a: Enzymes window – This tab enables the addition or removal of enzymes.</b><br/><br/>
@@ -118,16 +118,16 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.22.5. <i>Fragment bin tolerance</i>: Specify the bin size for binning mass spectra and for theoretical mass spectra generation.<br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.22.6. <i>Fragment bin offset</i>: Specify offset in Daltons to be considered to initiate the binning process.<br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.22.7. <i>Minimum fragment bin m/z</i>: Specify the minimum m/z to be vectorized.<br/>
-      &emsp;&emsp;&emsp;&emsp;2.2.4.22.8. <i>Maximum fragment bin m/z</i>: specify the maximum m/z to be vectorized.<br/><br/>
+      &emsp;&emsp;&emsp;&emsp;2.2.4.22.8. <i>Maximum fragment bin m/z</i>: Specify the maximum m/z to be vectorized.<br/><br/>
       &emsp;&emsp;&emsp;&emsp;<b>Explanation on ‘<i>Binning</i>’</b>: We refer to binning mass spectra into vectors as the process of discretization of continuous m/z values by partitioning them into predefined bins. The process consists of establishing an offset (in Da) and a bin width (in Da) to define the initial point and bin size, respectively. Each bin encompasses a specific m/z range, and peaks are allocated to the corresponding bin based on their m/z value. Subsequently, the intensity values of peaks within each bin are aggregated, in our case, by summation. The output entails a vector of intensity values, with each entry representing a distinct bin. This vectorial representation streamlines mass spectral data manipulation and comparison, facilitating bioinformatics analyses. Therefore, the binning loosely refers to the MS/MS tolerance.<br/><br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.22.9. <i>No. Isotopic Possibilities</i>: The precursor mass stored in raw data files may not correspond to the monoisotopic peak. This option allows the software to find the correct monoisotopic peak, which is required to identify the molecule but at the cost of opening up the search space. If a high number of isotopic possibilities is set, the search space will increase accordingly and impact Scout’s sensitivity negatively.<br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.22.10. <i>Silac Search</i>: check this option to perform SILAC search.<br/>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.22.10.1 <i>Add Silac Group</i>: a new window will open to add the groups for labelling peptides, e.g., heavy and light groups as well as their amino acids can be added in this feature.<br/>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.22.10.2 <i>Hybrid mode</i>: check this option to find not only heavy-heavy / light-light peptides, but also heavy-light/light-heavy ones.<br/>
-      &emsp;&emsp;&emsp;&emsp;2.2.4.22.11. <i>Export</i>: see <i><a href="#ref_2_2_4_17">2.2.4.17</a>.</i><br/>
-      &emsp;&emsp;&emsp;&emsp;2.2.4.22.12. <i>Load</i>: see <i><a href="#ref_2_2_4_18">2.2.4.18</a>.</i><br/>
-      &emsp;&emsp;&emsp;&emsp;2.2.4.22.13. <i>As default</i>: see <i><a href="#ref_2_2_4_19">2.2.4.19</a>.</i><br/>
-      &emsp;&emsp;&emsp;&emsp;2.2.4.22.14. <i>Restore</i>: see <i><a href="#ref_2_2_4_20">2.2.4.20</a>.</i><br/><br/>
+      &emsp;&emsp;&emsp;&emsp;2.2.4.22.11. <i>Export</i>: See <i><a href="#ref_2_2_4_17">2.2.4.17</a>.</i><br/>
+      &emsp;&emsp;&emsp;&emsp;2.2.4.22.12. <i>Load</i>: See <i><a href="#ref_2_2_4_18">2.2.4.18</a>.</i><br/>
+      &emsp;&emsp;&emsp;&emsp;2.2.4.22.13. <i>As default</i>: See <i><a href="#ref_2_2_4_19">2.2.4.19</a>.</i><br/>
+      &emsp;&emsp;&emsp;&emsp;2.2.4.22.14. <i>Restore</i>: See <i><a href="#ref_2_2_4_20">2.2.4.20</a>.</i><br/><br/>
       <div id="ref_2_2_5">&emsp;2.2.5 <b>Post Processing Parameters</b><br/></div>
       <p align="justify">&emsp;&emsp;&emsp;Adjusting certain post processing parameters may improve the performance of the process. To do this, navigate to Utils &#8594; Parameters &#8594; Post Processing (or use the keyboard shortcut ALT + P), as can illustrated in <b>Figure 2a</b>. A new window will appear (<b>Figure 8</b>).</p>
       <p align="center"><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/8a683620-04db-4a0d-8906-45e1a443d23a"><br/>
@@ -212,7 +212,7 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
       <b>Figure 16: Reprocess FDR and Import spectra features accessed by Tools menu.</b></p>
       <div id="ref_2_3_8">&emsp;2.3.8 <b>Import Spectra</b>: if the option ‘<i>Spectra saved in the results</i>’ is unchecked (see item <i><a href="#ref_2_2_4_22_1">2.2.4.22.1</a></i>), the identified spectra will not be displayed if the RAW file is not present in the same directory of the results. To import the identified spectra, go to Tools à Import Spectra (or press CTRL+ I) and specify where the RAW files are.<br/><br/></div>
   2.4. <b>Filter from the Scout starting page</b><br/>
-  <p align="justify">&emsp;&emsp;The results can be filtered again with a different FDR from the one that was used for the first round by I) switching to the tab ‘<i>Filter</i>’; II) selecting the folder that contains the identification files (<i>.buf</i>); III) specifying the FASTA file; IV) modifying the post-processing parameters (see item <i><a href="#ref_2_2_5">2.2.5</a></i>); and clicking on ‘<i>Filter</i>’ button (<b>Figure 17</b>). When the filter is finished, a result page opens. (See item <i><a href="#ref_2_3">2.3</a></i>)</p>
+  <p align="justify">&emsp;&emsp;The results can be filtered again with a different FDR from the one that was used for the first round by I) switching to the tab ‘<i>Filter</i>’; II) selecting the folder that contains the identification files (<i>.buf</i>); III) specifying the FASTA file; IV) modifying the post-processing parameters (see item <i><a href="#ref_2_2_5">2.2.5</a></i>); and clicking on ‘<i>Filter</i>’ button (<b>Figure 17</b>). When the filter is finished, a result page opens (see item <i><a href="#ref_2_3">2.3</a></i>).</p>
   <p align="center"><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/e3c5d844-3523-461c-8332-808b38ce38c4"><br/>
   <b>Figure 17: Filter tab window</b></p><br/>
   2.5. <b>Check for updates</b><br/>
