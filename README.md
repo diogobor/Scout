@@ -208,17 +208,23 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
       <p align="center"><br/><img width="45%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/84a62eea-b81a-49fe-ae0f-5d2c566480b4"><br/>
       <b>Figure 15: Export reports as well as the input file used on XlinkCyNET.</b></p>
       &emsp;2.3.7 <b>Reprocess FDR</b>: the results can be filtered again by using the current post-processing parameters (that can be modified, see item <i><a href="#ref_2_3_2">2.3.2</a></i>). To do so, go to Tools &#8594; Reprocess FDR (or press ALT + F).(<b>Figure 16</b>)
-      <p align="center"><br/><img width="30%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/203b5eac-bd37-47c8-9d16-0a94aa19d0f0"><br/>
-      <b>Figure 16: Reprocess FDR and Import spectra features accessed by Tools menu.</b></p>
+      <p align="center"><br/><img width="30%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/4aea43ab-486d-4ec2-981f-53bb0e1dde45"><br/>
+      <b>Figure 16: Reprocess FDR, Import spectra and Statistical analysis features accessed by Tools menu.</b></p>
       <div id="ref_2_3_8">&emsp;2.3.8 <b>Import Spectra</b>: if the option ‘<i>Spectra saved in the results</i>’ is unchecked (see item <i><a href="#ref_2_2_4_22_1">2.2.4.22.1</a></i>), the identified spectra will not be displayed if the RAW file is not present in the same directory of the results. To import the identified spectra, go to Tools à Import Spectra (or press CTRL+ I) and specify where the RAW files are.<br/><br/></div>
+      &emsp;2.3.9 <b>Statistics</b>: the user can obtain some statistical analysis from the results, such as, the precursor charge distribution (<b>Figure 17a</b>) as well as reaction sites distribution (<b>Figure 17b</b>) based on the identified cross-links. To do so, go to Tools &#8594; Statistical analysis (or press CTRL + Y). (<b>Figure 16</b>)
+      <p align="center"><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/012ebc3a-509e-4764-ac90-0b3f78cdbf93"><br/>
+      <b>Figure 17a: Precursor charge distribution of the identified cross-links.</b><br/><br/>
+      <img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/c6681e24-50ca-4111-9a36-9dac07617d52"><br/>
+      <b>Figure 17b: Reaction sites distribution taking into account all identified cross-links.</b>
+      </p>
   2.4. <b>Filter from the Scout starting page</b><br/>
   <p align="justify">&emsp;&emsp;The results can be filtered again with a different FDR from the one that was used for the first round by I) switching to the tab ‘<i>Filter</i>’; II) selecting the folder that contains the identification files (<i>.buf</i>); III) specifying the FASTA file; IV) modifying the post-processing parameters (see item <i><a href="#ref_2_2_5">2.2.5</a></i>); and clicking on ‘<i>Filter</i>’ button (<b>Figure 17</b>). When the filter is finished, a result page opens (see item <i><a href="#ref_2_3">2.3</a></i>).</p>
   <p align="center"><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/e3c5d844-3523-461c-8332-808b38ce38c4"><br/>
-  <b>Figure 17: Filter tab window</b></p><br/>
+  <b>Figure 18: Filter tab window</b></p><br/>
   2.5. <b>Check for updates</b><br/>
   <p align="justify">&emsp;&emsp;Scout checks for updates on software startup. Additionally, on Help &#8594; Check for updates the user can visualize all releases (and their notes) as well as whether Scout is updated. (<b>Figure 18</b>)</p>
   <p align="center"><img width="25%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/b0f31dea-72a7-49b2-b5cf-fc4702d8d805"><br/>
-  <b>Figure 18: Check for updates window.</b></p><br/>
+  <b>Figure 19: Check for updates window.</b></p><br/>
   <p><b>Closing remarks:</b></p>
   <p>&emsp;&emsp;In conclusion, Scout is a powerful tool for identifying protein-protein interactions using cleavable cross-linkers in proteomic datasets. Its user-friendly interface, customizable search and post-processing parameters, and multiple filtering options make it a versatile tool for protein interaction analysis. Scout can be particularly useful for studying complex biological systems when identifying protein-protein interactions is crucial for understanding their function.  Overall, Scout provides a valuable resource for researchers interested in studying protein-protein interactions at a large scale.</p>
   <p><b>References:</b></p>
