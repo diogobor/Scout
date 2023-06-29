@@ -14,7 +14,7 @@ Here, we present **Scout**, a computational methodology that enables interactomi
 -	The Scout software, available for download at https://github.com/diogobor/Scout/releases
 
 ## Data files
--	Scout v1.0 is compatible with data files in the formats MS2, Mascot Generic Format (MGF) and Thermo® RAW files.
+-	Scout v1.0 is compatible with data files in the formats MS2, Mascot Generic Format (MGF), Bruker® .d files, and Thermo® RAW files.
 -	Scout saves results in its _*.scout_ format and in the [mzIdentML 1.2](http://www.psidev.info/mzidentml#mzid12) proposed by [HUPO Proteomics Standard Initiative](http://www.psidev.info/) support the identification of cross-linked peptides. We note this is able to perform complete submissions of XL-MS data to PRIDE[<a href="#lib_1">1</a>], and is therefore compatible with the PRIDE Inspector software[<a href="#lib_2">2</a>]. Additionally, the software supports exporting all CSMs, Residue Pairs and PPIs as CSV files, as well as all results to [XlinkCyNET](https://apps.cytoscape.org/apps/xlinkcynet)[<a href="#lib_3">3</a>] for visualization within [Cytoscape](https://cytoscape.org/)[<a href="#lib_4">4</a>].
 
 # Procedures
@@ -30,12 +30,13 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
   <b>Figure 1: Graphical User Interface of Scout’s main window.</b></p>
   2.2. <b>Initial Setup</b><br/>
      &emsp;2.2.1. Searching a single file: Select the ‘<i>Raw File</i>’ radio button and then select a tandem mass spectra file (<i>e.g.</i>, MS2, MGF or Thermo® RAW), for searching a single file.<br/>
+     &emsp;&emsp;<i>PS: For Bruker® .d files, select the folder that contains the name of the file.</i><br/>
      &emsp;2.2.2. Batch searching: Select the ‘<i>Raw folder</i>’ radio button and then specify a directory containing the tandem mass spectra files.
      <div id="ref_2_2_3">&emsp;2.2.3. <i>Fasta File</i>: Select a file containing the protein sequences. The file format must be in FASTA format, typically obtained from <a href="https://www.uniprot.org/">Uniprot</a>. <i>For instance</i>:</div>
 &emsp;&emsp;>protein name<br/>
 &emsp;&emsp;PROTEINSEQUENCE<br/>
 <br/>
-      &emsp;Click on <i>‘Start’</i> button to initiate the search by using the default parameters. Once the search is complete, the results page will open (see item <i><a href="#ref_2_3">2.3</a></i>).<br/><br/>
+      &emsp;Click on <i>‘Start’</i> button to initiate the search by using the default parameters. Once the search is complete, the results page will open (see item <i><a href="#ref_2_3">2.3</a></i>). <i>PS: If for some reason the Scout closes, the search can continue from the point it was paused. To do this, just set the parameters again and press the start button.</i><br/><br/>
       &emsp;2.2.4 <b>Search Parameters</b><br/>
       Search parameters can be adjusted to optimize the search process. To modify the parameters, navigate to Utils &#8594; Parameters &#8594; Search (or press ALT + S), as illustrated in <b>Figure 2a</b>, a new window will open (<b>Figure 2b</b>).
       Search parameters can be adjusted to optimize the search process. To modify the parameters, navigate to Utils &#8594; Parameters &#8594; Search (or press ALT + S), as illustrated in <b>Figure 2a</b>, a new window will open (<b>Figure 2b</b>).
