@@ -109,7 +109,7 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
       <div id="ref_2_2_4_19">&emsp;&emsp;2.2.4.19. <i>As default</i>: Set the current parameters as the software’s default settings.</div>
       <div id="ref_2_2_4_20">&emsp;&emsp;2.2.4.20. <i>Restore</i>: Revert to factory default parameters.</div>
       &emsp;&emsp;2.2.4.21. <i>Advanced</i>: Click on this link to customize the advanced parameters (not necessary for most searches). (<b>Figure 7</b>).
-      <p align="center"><br/><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/8b0fed80-1c7d-4547-9e1e-6fed664cf784"><br/>
+      <p align="center"><br/><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/ea17394a-6d1b-4e16-8e69-20340e8ffa48"><br/>
       <b>Figure 7: Edit advanced parameters: In this window, all search parameters can be modified.</b></p>
       &emsp;&emsp;2.2.4.22. <b>Advanced Search Parameters</b><br/>
       <div id="ref_2_2_4_22_1">&emsp;&emsp;&emsp;&emsp;2.2.4.22.1. <i>Spectra saved in the results</i>: Check this option to save the identified experimental spectra in the results file.<br/></div>
@@ -125,10 +125,14 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.22.10. <i>Silac Search</i>: check this option to perform SILAC search.<br/>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.22.10.1 <i>Add Silac Group</i>: a new window will open to add the groups for labelling peptides, e.g., heavy and light groups as well as their amino acids can be added in this feature.<br/>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.22.10.2 <i>Hybrid mode</i>: check this option to find not only heavy-heavy / light-light peptides, but also heavy-light/light-heavy ones.<br/>
-      &emsp;&emsp;&emsp;&emsp;2.2.4.22.11. <i>Export</i>: See <i><a href="#ref_2_2_4_17">2.2.4.17</a>.</i><br/>
-      &emsp;&emsp;&emsp;&emsp;2.2.4.22.12. <i>Load</i>: See <i><a href="#ref_2_2_4_18">2.2.4.18</a>.</i><br/>
-      &emsp;&emsp;&emsp;&emsp;2.2.4.22.13. <i>As default</i>: See <i><a href="#ref_2_2_4_19">2.2.4.19</a>.</i><br/>
-      &emsp;&emsp;&emsp;&emsp;2.2.4.22.14. <i>Restore</i>: See <i><a href="#ref_2_2_4_20">2.2.4.20</a>.</i><br/><br/>
+      &emsp;&emsp;&emsp;&emsp;2.2.4.22.11. <i>Isobaric labelling search</i>: check this option to perform Isobaric labelling search (e.g., TMT, iTRAQ).<br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.22.11.1 <i>Add Reagent</i>: a new window will open to set the reagent up.<br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.22.11.1.1 <i>Reagent</i>: Select a reagent. If the desired reagent is not in the list, click on the <i>'Add'</i> button.<br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.22.11.1.2 <i>Free residue tolerance</i>: Set the minimum number of residues that TMT will not react.<br/>
+      &emsp;&emsp;&emsp;&emsp;2.2.4.22.12. <i>Export</i>: See <i><a href="#ref_2_2_4_17">2.2.4.17</a>.</i><br/>
+      &emsp;&emsp;&emsp;&emsp;2.2.4.22.13. <i>Load</i>: See <i><a href="#ref_2_2_4_18">2.2.4.18</a>.</i><br/>
+      &emsp;&emsp;&emsp;&emsp;2.2.4.22.14. <i>As default</i>: See <i><a href="#ref_2_2_4_19">2.2.4.19</a>.</i><br/>
+      &emsp;&emsp;&emsp;&emsp;2.2.4.22.15. <i>Restore</i>: See <i><a href="#ref_2_2_4_20">2.2.4.20</a>.</i><br/><br/>
       <div id="ref_2_2_5">&emsp;2.2.5 <b>Post Processing Parameters</b><br/></div>
       <p align="justify">&emsp;&emsp;&emsp;Adjusting certain post processing parameters may improve the performance of the process. To do this, navigate to Utils &#8594; Parameters &#8594; Post Processing (or use the keyboard shortcut ALT + P), as can illustrated in <b>Figure 2a</b>. A new window will appear (<b>Figure 8</b>).</p>
       <p align="center"><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/8a683620-04db-4a0d-8906-45e1a443d23a"><br/>
