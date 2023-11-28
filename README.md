@@ -109,7 +109,7 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
       <div id="ref_2_2_4_19">&emsp;&emsp;2.2.4.19. <i>As default</i>: Set the current parameters as the software’s default settings.</div>
       <div id="ref_2_2_4_20">&emsp;&emsp;2.2.4.20. <i>Restore</i>: Revert to factory default parameters.</div>
       &emsp;&emsp;2.2.4.21. <i>Advanced</i>: Click on this link to customize the advanced parameters (not necessary for most searches). (<b>Figure 7</b>).
-      <p align="center"><br/><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/ea17394a-6d1b-4e16-8e69-20340e8ffa48"><br/>
+      <p align="center"><br/><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/1ab1c41b-6d5c-4cae-8478-b3fdba210cb4"><br/>
       <b>Figure 7: Edit advanced parameters: In this window, all search parameters can be modified.</b></p>
       &emsp;&emsp;2.2.4.22. <b>Advanced Search Parameters</b><br/>
       <div id="ref_2_2_4_22_1">&emsp;&emsp;&emsp;&emsp;2.2.4.22.1. <i>Spectra saved in the results</i>: Check this option to save the identified experimental spectra in the results file.<br/></div>
@@ -122,8 +122,8 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.22.8. <i>Maximum fragment bin m/z</i>: Specify the maximum m/z to be vectorized.<br/><br/>
       &emsp;&emsp;&emsp;&emsp;<b>Explanation on ‘<i>Binning</i>’</b>: We refer to binning mass spectra into vectors as the process of discretization of continuous m/z values by partitioning them into predefined bins. The process consists of establishing an offset (in Da) and a bin width (in Da) to define the initial point and bin size, respectively. Each bin encompasses a specific m/z range, and peaks are allocated to the corresponding bin based on their m/z value. Subsequently, the intensity values of peaks within each bin are aggregated, in our case, by summation. The output entails a vector of intensity values, with each entry representing a distinct bin. This vectorial representation streamlines mass spectral data manipulation and comparison, facilitating bioinformatics analyses. Therefore, the binning loosely refers to the MS/MS tolerance.<br/><br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.22.9. <i>No. Isotopic Possibilities</i>: The precursor mass stored in raw data files may not correspond to the monoisotopic peak. This option allows the software to find the correct monoisotopic peak, which is required to identify the molecule but at the cost of opening up the search space. If a high number of isotopic possibilities is set, the search space will increase accordingly and impact Scout’s sensitivity negatively.<br/>
-      &emsp;&emsp;&emsp;&emsp;2.2.4.22.10. <i>Silac Search</i>: check this option to perform SILAC search.<br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.22.10.1 <i>Add Silac Group</i>: a new window will open to add the groups for labelling peptides, e.g., heavy and light groups as well as their amino acids can be added in this feature.<br/>
+      &emsp;&emsp;&emsp;&emsp;2.2.4.22.10. <i>Metabolic labelling Search</i>: check this option to perform SILAC search.<br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.22.10.1 <i>Add Group</i>: a new window will open to add the groups for labelling peptides, e.g., heavy and light groups as well as their amino acids can be added in this feature.<br/>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.22.10.2 <i>Hybrid mode</i>: check this option to find not only heavy-heavy / light-light peptides, but also heavy-light/light-heavy ones.<br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.22.11. <i>Isobaric labelling search</i>: check this option to perform Isobaric labelling search (e.g., TMT, iTRAQ).<br/>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.22.11.1 <i>Add Reagent</i>: a new window will open to set the reagent up.<br/>
