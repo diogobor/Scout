@@ -18,7 +18,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
 
 ## Data files
 -	Scout v1.0 is compatible with data files in the formats MS2, Mascot Generic Format (MGF), Bruker® .d files, and Thermo® RAW files.
--	Scout saves results in its _*.scout_ format and in the [mzIdentML 1.2](http://www.psidev.info/mzidentml#mzid12) proposed by [HUPO Proteomics Standard Initiative](http://www.psidev.info/) support the identification of cross-linked peptides. We note this is able to perform complete submissions of XL-MS data to PRIDE[<a href="#lib_1">1</a>], and is therefore compatible with the PRIDE Inspector software[<a href="#lib_2">2</a>]. Additionally, the software supports exporting all CSMs, Residue Pairs and PPIs as CSV files, as well as all results to [XlinkCyNET](https://apps.cytoscape.org/apps/xlinkcynet)[<a href="#lib_3">3</a>] for visualization within [Cytoscape](https://cytoscape.org/)[<a href="#lib_4">4</a>].
+-	Scout saves results in its _*.scout_ format and in the [mzIdentML 1.2](http://www.psidev.info/mzidentml#mzid12) proposed by [HUPO Proteomics Standard Initiative](http://www.psidev.info/) to support the identification of cross-linked peptides. We note this is able to perform complete submissions of XL-MS data to PRIDE[<a href="#lib_1">1</a>], and is therefore compatible with the PRIDE Inspector software[<a href="#lib_2">2</a>]. Additionally, the software supports exporting all CSMs, Residue Pairs and PPIs as CSV files, as well as all results to [XlinkCyNET](https://apps.cytoscape.org/apps/xlinkcynet)[<a href="#lib_3">3</a>] for visualization within [Cytoscape](https://cytoscape.org/)[<a href="#lib_4">4</a>].
 
 # Procedures
 
@@ -208,7 +208,7 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
       &emsp;2.3.4 <b>Save Results</b>: the current results can be saved to preserve them. To do so, go to File &#8594; Save &#8594; Results (or press CTRL + S), as can be seen in <b>Figure 14a</b>.
       <p align="center"><br/><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/8ce5684a-d43d-4c7a-97f8-86e7924583fc"><br/>
       <b>Figure 14a: Open and Save results as well as the parameters used in the search.</b></p>
-      &emsp;&emsp;2.3.4.1 <b>Save Results as mzIdentML file</b>: the current results can also be saved in mzIdentML 1.2 format. To do so, after going to ‘<i>Save Results</i>’, a new open will open (‘<i>Save as</i>’), then change ‘<i>Save as type</i>’ to mzIdentML 1.2 Result File (<i>.mzid</i>), as can be seen in <b>Figure 14b</b>.
+      &emsp;&emsp;2.3.4.1 <b>Save Results as mzIdentML file</b>: the current results can also be saved in mzIdentML 1.2 format. To do so, after going to ‘<i>Save Results</i>’, a new window will open (‘<i>Save as</i>’), then change ‘<i>Save as type</i>’ to mzIdentML 1.2 Result File (<i>.mzid</i>), as can be seen in <b>Figure 14b</b>.
       <p align="center"><br/><img width="45%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/91e58587-07a3-42f0-80b6-a7517ccfd897"><br/>
       <b>Figure 14b: Save the results in mzIdentML 1.2 format.</b></p>
       &emsp;2.3.5 <b>Save Parameters</b>: the search and post processing parameters used in the search can be exported. To do so, go to File &#8594; Save &#8594; Parameters (or press ALT + W), as can be seen in <b>Figure 14</b>.<br/>
