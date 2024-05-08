@@ -18,7 +18,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
 
 ## Data files
 -	Scout v1.0 is compatible with data files in the formats MS2, Mascot Generic Format (MGF), Bruker® .d files, and Thermo® RAW files.
--	Scout saves results in its _*.scout_ format and in the [mzIdentML 1.2](http://www.psidev.info/mzidentml#mzid12) proposed by [HUPO Proteomics Standard Initiative](http://www.psidev.info/) to support the identification of cross-linked peptides. We note this is able to perform complete submissions of XL-MS data to PRIDE[<a href="#lib_1">1</a>], and is therefore compatible with the PRIDE Inspector software[<a href="#lib_2">2</a>]. Additionally, the software supports exporting all CSMs, Residue Pairs and PPIs as CSV files, as well as all results to [XlinkCyNET](https://apps.cytoscape.org/apps/xlinkcynet)[<a href="#lib_3">3</a>] for visualization within [Cytoscape](https://cytoscape.org/)[<a href="#lib_4">4</a>].
+-	Scout saves results in its _*.scout_ format, in the [mzIdentML 1.2](http://www.psidev.info/mzidentml#mzid12) and [mzIdentML 1.3](https://github.com/HUPO-PSI/mzIdentML/tree/master/specification_document/specdoc1_3-draft) proposed by [HUPO Proteomics Standard Initiative](http://www.psidev.info/) to support the identification of cross-linked peptides. We note this is able to perform complete submissions of XL-MS data to PRIDE[<a href="#lib_1">1</a>], and is therefore compatible with the PRIDE Inspector software[<a href="#lib_2">2</a>]. Additionally, the software supports exporting all CSMs, Residue Pairs and PPIs as CSV files, as well as all results to [XlinkCyNET](https://apps.cytoscape.org/apps/xlinkcynet)[<a href="#lib_3">3</a>] for visualization within [Cytoscape](https://cytoscape.org/)[<a href="#lib_4">4</a>].
 
 # Procedures
 
@@ -28,8 +28,8 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
 
 1. **Workflow:**<br/>
 The following workflow demonstrates how to perform a search using _Scout_.<br/>
-  2.1. Launch <i>Scout</i>: Open the Scout application to access its main window as shown in <b>Figure 1</b>.<br/>
-  <p align="center"><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/15459dd3-654a-4d14-bf0a-8537f4027259"><br/>
+  2.1. Launch <i>Scout</i>: Open the Scout application to access its main window, as shown in <b>Figure 1</b>.<br/>
+  <p align="center"><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/c66e1f4e-fb63-403b-af8a-7706e8764383"><br/>
   <b>Figure 1: Graphical User Interface of Scout’s main window.</b></p>
   2.2. <b>Initial Setup</b><br/>
      &emsp;2.2.1. Searching a single file: Select the ‘<i>Raw File</i>’ radio button and then select a tandem mass spectra file (<i>e.g.</i>, MS2, MGF or Thermo® RAW), for searching a single file.<br/>
@@ -39,13 +39,16 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
 &emsp;&emsp;>protein name<br/>
 &emsp;&emsp;PROTEINSEQUENCE<br/>
 <br/>
-      &emsp;Click on <i>‘Start’</i> button to initiate the search by using the default parameters. Once the search is complete, the results page will open (see item <i><a href="#ref_2_3">2.3</a></i>). <i>PS: If for some reason the Scout closes, the search can continue from the point it was paused. To do this, just set the parameters again and press the start button.</i><br/><br/>
+      &emsp;&#8658; Click on <i>'Start'</i> button to initiate the search by using the default parameters. Once the search is complete, the results window will be opened (see item <i><a href="#ref_2_3">2.3</a></i>).<br/>
+      &emsp;&#8658; To stop the search, click on <i>'Cancel'</i> button and confirm.<br/>
+      &emsp;<i>PS: If for some reason the Scout closes, the search can continue from the point it was paused. To do this, just set the same parameters again and press the start button.</i><br/>
+      &emsp;&#8658; All procedures will be recorded in the <i>Log</i> box. To export it, go to File &#8594; Export log (or press ALT + M).<br/><br/>
       &emsp;2.2.4 <b>Search Parameters</b><br/>
+      Search parameters can be adjusted to optimize the search process. To modify the parameters, navigate to Parameters &#8594; Search (or press ALT + S), as illustrated in <b>Figure 2a</b>, a new window will open (<b>Figure 2b</b>).
       Search parameters can be adjusted to optimize the search process. To modify the parameters, navigate to Utils &#8594; Parameters &#8594; Search (or press ALT + S), as illustrated in <b>Figure 2a</b>, a new window will open (<b>Figure 2b</b>).
-      Search parameters can be adjusted to optimize the search process. To modify the parameters, navigate to Utils &#8594; Parameters &#8594; Search (or press ALT + S), as illustrated in <b>Figure 2a</b>, a new window will open (<b>Figure 2b</b>).
-      <p align="center"><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/662c77a9-f88f-4fa5-9cba-d449c3ba575f"><br/>
-      <b>Figure 2a: Search and Post Processing Parameters can be modified on Utils &#8594; Parameters.</b><br/><br/>
-      <img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/9bc95bba-d4ce-4cbb-bf20-2e8e38d704ca"><br/>
+      <p align="center"><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/255baf3a-aaa1-477a-8b20-eecfedbba462"><br/>
+      <b>Figure 2a: Search and Post Processing Parameters can be modified on Parameters menu.</b><br/><br/>
+      <img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/1a89917b-3876-4123-b3b1-2bb3a73354a6"><br/>
       <b>Figure 2b: Search Parameters window</b></p>
       &emsp;&emsp;2.2.4.1. <i>MS1 PPM Tolerance</i>: Specify the ppm error tolerance for the precursor mass.<br/>
 		  &emsp;&emsp;2.2.4.2. <i>MS2 PPM Tolerance</i>: Specify the ppm error tolerance for fragment ions.<br/>
@@ -64,8 +67,8 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
       <b>Figure 3b: New Enzyme Inclusion – This window allows users to introduce a new enzyme to the existing list of enzymes.</b>
       </p>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.10.1.1. <i>Name</i>: Specify a name for the new enzyme.<br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.10.1.2. <i>Sites</i>: Specify the amino acids at which cleavage should occur. <i>Note: the amino acids should be included without spaces, for instance, the trypsin sites should appear as KR.</i><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.10.1.3. <i>Blocked by</i>: Specify the amino acids that will impede the cleavage. <i>Note: as in ‘Sites’, the amino acids must be typed without spaces.</i><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.10.1.2. <i>Sites</i>: Specify the amino acids at which cleavage should occur. <i>PS: The amino acids should be included without spaces, for instance, the trypsin sites should appear as KR.</i><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.10.1.3. <i>Blocked by</i>: Specify the amino acids that will impede the cleavage. <i>PS: As in ‘Sites’, the amino acids must be typed without spaces.</i><br/>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.10.1.4. <i>C-Terminal</i>: Check this option if the new enzyme cleaves at the C-terminus of the peptide; otherwise, cleavage will occur at the N-terminus.<br/>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Click on the ‘<i>Confirm</i>’ button to incorporate the new enzyme into the Enzymes table. Afterwards, return to <i><a href="#ref_2_2_4_10">2.2.4.10</a></i>.<br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.10.2 To remove an Enzyme, press ‘<i>Del</i>’ key. A confirmation message will be displayed. Confirm it to proceed.<br/><br/>
@@ -82,7 +85,7 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.12.1.3. <i>Heavy Fragment Mass</i>: Specify the heavy fragment mass in Daltons.<br/>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.12.1.4. <i>Full Mass</i>: Specify the full mass of the reagent in Daltons.<br/>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.12.1.5. <i>Ion Pair Shift</i>: The pair will be automatically calculated according to the light and heavy fragment masses.<br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.12.1.6. <i>Target Residues</i>: Specify the target residues that the new cleavable cross-linker will react with. <i>Note: List residues without spaces; for example, use KSYT for DSSO.</i><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.12.1.6. <i>Target Residues</i>: Specify the target residues that the new cleavable cross-linker will react with. <i>PS: List residues without spaces; for example, use KSYT for DSSO.</i><br/>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.12.1.7. <i>N-Terminal</i>: Check this option if the new cleavable cross-linker also reacts at the N-terminus of the protein. <br/>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Click the ‘<i>Confirm</i>’ button to incorporate the new cleavable reagent into the XL Reagents table. Subsequently, return to <i><a href="#ref_2_2_4_10">2.2.4.10</a></i>.<br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.12.2 To remove an XL Reagent, press ‘<i>Del</i>’ key. A confirmation message will be displayed. Confirm it to proceed.<br/><br/>
@@ -102,9 +105,9 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.15.5. <i>N-Terminal</i>: Check this option if the new post-translational modification occurs at the N-terminus of the peptide.<br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.15.6. <i>Variable</i>: Check this option if the new post-translational modification is dynamic, i.e., if it may or may not occur.<br/>
       &emsp;&emsp;&emsp;&emsp;Click on the ‘<i>Confirm</i>’ button to incorporate the new modification into the Modification table.<br/>
-      &emsp;&emsp;&emsp;&emsp;<b>Note: Upon completing this process, ensure the new post-translational modification is checked in ‘<u>Use</u>’ field for it to be considered in the search.</b><br/>
+      &emsp;&emsp;&emsp;&emsp;<i><b>PS: Upon completing this process, ensure the new post-translational modification is checked in ‘<u>Use</u>’ field for it to be considered in the search.</b></i><br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.15.7 To remove a modification, press the ‘<i>Del</i>’ key. A confirmation message will be displayed. Confirm the action to proceed.<br/><br/>
-      &emsp;&emsp;2.2.4.16. <i>Contaminants</i>: on this tab, the current contaminants can be modified as well as new ones added (<b>Figure 6</b>). <i>Note: all contaminants must be entered in FASTA format (similar to item <a href="#ref_2_2_3">2.2.3</a>).</i>
+      &emsp;&emsp;2.2.4.16. <i>Contaminants</i>: on this tab, the current contaminants can be modified as well as new ones added (<b>Figure 6</b>). <i>PS: All contaminants must be entered in FASTA format (similar to item <a href="#ref_2_2_3">2.2.3</a>).</i>
       <p align="center"><br/><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/ae9bd24e-1224-451e-97b5-c41b4280dea6"><br/>
       <b>Figure 6: Contaminants tab: all contaminant sequences can be modified as well as new ones can be added.</b></p>
       <div id="ref_2_2_4_17">&emsp;&emsp;2.2.4.17. <i>Export</i>: Choose this option to save the current parameters to a file.</div>
@@ -137,7 +140,7 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.22.14. <i>As default</i>: See <i><a href="#ref_2_2_4_19">2.2.4.19</a>.</i><br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.22.15. <i>Restore</i>: See <i><a href="#ref_2_2_4_20">2.2.4.20</a>.</i><br/><br/>
       <div id="ref_2_2_5">&emsp;2.2.5 <b>Post Processing Parameters</b><br/></div>
-      <p align="justify">&emsp;&emsp;&emsp;Adjusting certain post processing parameters may improve the performance of the process. To do this, navigate to Utils &#8594; Parameters &#8594; Post Processing (or use the keyboard shortcut ALT + P), as can illustrated in <b>Figure 2a</b>. A new window will appear (<b>Figure 8</b>).</p>
+      <p align="justify">&emsp;&emsp;&emsp;Adjusting certain post processing parameters may improve the performance of the process. To do this, navigate to Parameters &#8594; Post Processing (or use the keyboard shortcut ALT + P), as can be illustrated in <b>Figure 2a</b>. A new window will appear (<b>Figure 8</b>).</p>
       <p align="center"><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/8a683620-04db-4a0d-8906-45e1a443d23a"><br/>
       <b>Figure 8: Post Processing Parameters window</b></p>
       &emsp;&emsp;2.2.5.1. <i>Use only unique XLs into PPIs</i>: Check this option to remove PPIs that contain shared cross-linked peptides.<br/>
@@ -150,50 +153,49 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
       &emsp;&emsp;2.2.5.8. <i>Load</i>: Similar to <i><a href="#ref_2_2_4_18">2.2.4.18</a>.</i><br/>
       &emsp;&emsp;2.2.5.9. <i>As default</i>: Similar to <i><a href="#ref_2_2_4_19">2.2.4.19</a>.</i><br/>
       &emsp;&emsp;2.2.5.10. <i>Restore</i>: Similar to <i><a href="#ref_2_2_4_20">2.2.4.20</a>.</i><br/><br/>
-      &emsp;2.2.6. <i>Export log</i>: the whole log information can be exported by going to Tools &#8594; Export log (or pressing ALT + M).<br/><br/>
   <div id="ref_2_3">2.3. <b>Results</b></div>
 &emsp;&emsp;Upon completion of the search processing, the results are automatically saved in the same directory in which the RAW files are (<i><sup>*</sup>.scout file</i>) and presented in a new window with separate tabs: CSMs, Residue Pairs and PPIs, as well as the parameters used in the search. (<b>Figure 9</b>)
-      <p align="center"><img width="65%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/148bf408-7bf1-449d-bca8-c92093523733"><br/>
+      <p align="center"><img width="65%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/1a309b27-a80e-49d1-8af4-0487cc90d5dc"><br/>
       <b>Figure 9: Results window.</b></p>
 &emsp;&emsp;Double-clicking on a row containing a CSM result opens the spectrum viewer displaying the spectrum from which it was identified*. The sequence coverage (<b>Figure 10a</b>) and the standard deviation plot (<i>m/z vs ppm</i>) of all identified peaks (<b>Figure 10b</b>) can be visualized through this window as well as all fragment ions (<b>Figure 10c</b>). Double-clicking a cross-link opens a list of CSMs from which it is derived (<b>Figure 10d</b>). Double-clicking a PPI displays all cross-links belonging to the PPI (<b>Figure 10e</b>) and an additional click reveals all CSMs associated with the respective cross-link.<br/>
-<i>*Note: The spectrum viewer will be opened if the RAW file is in the directory or the mass spectrum was saved in <sup>*</sup>.scout file (see item <a href="#ref_2_3_8">2.3.8</a>).</i>
-      <p align="center"><br/><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/3b702045-190c-46de-aabc-d316c6e1794b"><br/>
+<i>*PS: The spectrum viewer will be opened if the RAW file is in the directory or the mass spectrum was saved in <sup>*</sup>.scout file (see item <a href="#ref_2_3_8">2.3.8</a>).</i>
+      <p align="center"><br/><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/049c95ec-036e-42a2-878d-b80611cef34a"><br/>
       <b>Figure 10a: Sequence coverage annotation & spectrum visualization.</b><br/><br/>
       <img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/74be95cd-4564-41be-94c8-606b20424b13"><br/>
       <b>Figure 10b: Standard deviation plot of all identified peaks.</b><br/><br/>
       <img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/3f12bb10-4160-49ca-b355-6f7a24164155"><br/>
       <b>Figure 10c: Theoretical fragment ions.</b><br/><br/>
-      <img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/e17082d6-edce-4da5-865d-83b21f67562d"><br/>
+      <img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/5c1fa346-16cc-4653-ae83-240ca506edbd"><br/>
       <b>Figure 10d: List of CSMs from a specific Residue Pair.</b><br/><br/>
-      <img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/b5065403-fb65-4d81-8403-32d58a0685ce"><br/>
+      <img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/d4e583ab-80ab-40ef-aa58-e2a473f506ea"><br/>
       <b>Figure 10e: List of Residue Pairs from a specific PPI.</b>
       </p>
       &emsp;2.3.1 <b>Filter results</b>: results contain FDR filtered identifications on all levels – in the graphical user interface, personal filters can be applied:</br>
       &emsp;&emsp;2.3.1.1. <b><i>CSM level</i></b>: In this tab (<b>Figure 9</b>), the CSMs are displayed according to the specified filter parameters.</br>
       &emsp;&emsp;&emsp;&emsp;2.3.1.1.1 <i>Scan</i>: Specify the scan number to be displayed.</br>
       &emsp;&emsp;&emsp;&emsp;2.3.1.1.2 <i>Score</i>: Specify the score cutoff. All CSMs with a score greater than ‘<i>Score</i>’ will be displayed.</br>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.1.3 <i>Search</i>: Type the &alpha; or/and &beta; peptide as well as the protein 1 or/and protein 2, or even gene 1 or/and gene 2 to be displayed. <i>Note: Type at least four characters</i>.</br>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.1.4 <i>Files</i>: Select the file(s) that the results to be displayed belong to. If no files are selected or ‘<i>All files</i>’ is selected, all results will be displayed.</br>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.1.3 <i>Search</i>: Type the &alpha; or/and &beta; peptide (separated by <i>'-'</i>) as well as the protein 1 or/and protein 2 (separated by <i>'-'</i>), or even gene 1 or/and gene 2 (separated by <i>'-'</i>) to be displayed. <i>PS: Type at least four characters</i>.</br>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.1.4 <i>Files</i>: Select the file(s) that the results to be displayed belong to. If no files or ‘<i>All files</i>’ is selected, all results will be displayed.</br>
       &emsp;&emsp;&emsp;&emsp;2.3.1.1.5 <i>Show inter-protein links only</i>: Check this option to display only the CSMs that belong to inter-protein interactions.</br>
       &emsp;&emsp;&emsp;&emsp;2.3.1.1.6 <i>Show decoys</i>: Check this option to display decoy identifications.</br>
       &emsp;&emsp;&emsp;&emsp;2.3.1.1.7 Click on ‘<i>Filter</i>’ button or press <i>Enter</i> to perform the filter.</br>
       &emsp;&emsp;&emsp;&emsp;2.3.1.1.8 Click on ‘<i>Reset</i>’ button to restore default result display.</br>
       &emsp;&emsp;&emsp;&emsp;2.3.1.1.9. <i>Summary</i>: In this box, the number of identified CSMs will be displayed as well as the calculated FDR.</br><br/>
       &emsp;&emsp;2.3.1.2. <b><i>Residue Pair level</i></b>: on this tab, the residue pairs will be displayed according to the specified filter parameters (<b>Figure 11</b>).</br>
-      <p align="center"><br/><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/7f05845c-9b93-41f1-8291-c94661f6aace"><br/>
+      <p align="center"><br/><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/1eaa24e7-20f4-482a-9b4f-ebbaa209065a"><br/>
       <b>Figure 11: Residue Pairs tab</b></p>
       &emsp;&emsp;&emsp;&emsp;2.3.1.2.1 <i>Score</i>: Specify the score cutoff. All Residue Pairs with a score greater than ‘Score’ will be displayed.<br/>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.2.2 <i>Search</i>: Type the &alpha; or/and &beta; peptide as well as the protein 1 or/and protein 2 or even gene 1 or/and gene 2 to be displayed. <i>PS: Type at least four characters.</i><br/>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.2.2 <i>Search</i>: Type the &alpha; or/and &beta; (separated by <i>'-'</i>) peptide as well as the protein 1 or/and protein 2 (separated by <i>'-'</i>) or even gene 1 or/and gene 2 (separated by <i>'-'</i>) to be displayed. <i>PS: Type at least four characters.</i><br/>
       &emsp;&emsp;&emsp;&emsp;2.3.1.2.3 <i>Show inter-protein links only</i>: Check this option to display only the Residue Pairs that belong to inter-protein interactions.<br/>
       &emsp;&emsp;&emsp;&emsp;2.3.1.2.4 <i>Show decoys</i>: Check this option to display decoy identifications.<br/>
       &emsp;&emsp;&emsp;&emsp;2.3.1.2.5 Click on ‘<i>Filter</i>’ button or press <i>Enter</i> to perform the filter.<br/>
       &emsp;&emsp;&emsp;&emsp;2.3.1.2.6 Click on ‘<i>Reset</i>’ button to restore the results.<br/>
       &emsp;&emsp;&emsp;&emsp;2.3.1.2.7. <i>Summary</i>: In this box, the number of identified Residue Pairs will be displayed as well as the calculated FDR.<br/><br/>
-      &emsp;&emsp;2.3.1.3. <b><i>PPI level</i></b>: on this tab, the PPIs will be displayed according to the specified filter parameters (<b>Figure 12</b>).
-      <p align="center"><br/><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/afa5db94-1def-41a5-9490-c37b97ab3357"><br/>
+      &emsp;&emsp;2.3.1.3. <b><i>PPI level</i></b>: on this tab, the PPIs will be displayed according to the specified filter parameters (<b>Figure 12</b>)
+      <p align="center"><br/><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/d79c669f-b8e5-4323-93d2-b3999644e6dc"><br/>
       <b>Figure 12: PPIs tab</b></p>
       &emsp;&emsp;&emsp;&emsp;2.3.1.3.1 <i>Score</i>: Specify the score cutoff. All PPIs with a score greater than ‘<i>Score</i>’ will be displayed.<br/>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.3.2 <i>Search</i>: Type protein 1 or/and protein 2 as well as gene 1 or/and gene 2 to be displayed. Note: Type at least four characters.<br/>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.3.2 <i>Search</i>: Type protein 1 or/and protein 2 (separated by <i>'-'</i>) as well as gene 1 or/and gene 2 (separated by <i>'-'</i>) to be displayed. <i>PS: Type at least four characters.</i><br/>
       &emsp;&emsp;&emsp;&emsp;2.3.1.3.3 <i>Show inter-protein links only</i>: Check this option to display only the identifications that belong to inter-protein interactions.<br/>
       &emsp;&emsp;&emsp;&emsp;2.3.1.3.4 <i>Show decoys</i>: Check this option to display decoy identifications.<br/>
       &emsp;&emsp;&emsp;&emsp;2.3.1.3.5 <i>Group PPIs by gene</i>: Check this option to group all protein-protein interactions by gene name.<br/>
@@ -201,37 +203,39 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
       &emsp;&emsp;&emsp;&emsp;2.3.1.3.7 Click on ‘<i>Reset</i>’ button to restore the results.<br/>
       &emsp;&emsp;&emsp;&emsp;2.3.1.3.8. <i>Summary</i>: in this box, the number of identified PPIs will be displayed as well as the calculated FDR.<br/><br/>
       <div id="ref_2_3_2">&emsp;&emsp;2.3.2 <b><i>Parameters</i></b>: both search and post processing parameters used in the search can be visualized on this tab. (<b>Figure 13a and b</b>)</div>
-      <p align="center"><br/><img width="30%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/e452522d-a4d4-4159-982f-cf473e4509a5">&emsp;<img width="29.95%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/0dd18f4b-c289-4a78-8dba-db032e8d83ba"><br/>
+      <p align="center"><br/><img width="30%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/bb7bb3b4-1a8f-44e6-afea-d2a457c70212">&emsp;<img width="29.95%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/11f471db-49af-4ac0-9ad8-e589b3435ac5"><br/>
       <b>Figure 13: Search and post processing parameters can be visualized on this tab (Figure 13a and 13b, respectively).</b></p>
-      &emsp;&emsp;2.3.2.1 <b>Post processing parameters</b>: the parameters used to perform FDR on CSM, Residue Pair and PPI levels can be modified to improve the results. To do so, click on ‘Edit’ button and change the parameters (<b>Figure 13 b</b>). (<i>Similar to <a href="#ref_2_2_5">2.2.5</a></i>) Afterwards, a new filter will be performed.<br/><br/>
-      &emsp;2.3.3 <b>Open Results</b>: new Scout results can be opened. To do so, go to File &#8594; Open Results (or press CTRL + O), as can be seen in <b>Figure 14a</b>. Results can also be opened from the Scout starting page by clicking File menu à Open Results.<br/>
+      &emsp;&emsp;2.3.2.1 <b>Post processing parameters</b>: the parameters used to perform FDR on CSM, Residue Pair and PPI levels can be modified to improve the results. To do so, click on <i>'Edit'</i> button and change the parameters (<b>Figure 13 b</b>) (<i>Similar to <a href="#ref_2_2_5">2.2.5</a></i>). Afterwards, a new filter will be performed.<br/><br/>
+      &emsp;2.3.3 <b>Open Results</b>: new Scout results can be opened (<i>*.scout file</i>). To do so, go to File &#8594; Open Results (or press CTRL + O), as can be seen in <b>Figure 14a</b>. <i>PS: Multiple files can be opened if all of them used the same parameters in the search</i>.<br/>
+      &emsp;&#8658; Results can also be opened from the Scout starting page by clicking on File menu &#8594; Open Results (or pressing CTRL + O).<br/><br/>
       &emsp;2.3.4 <b>Save Results</b>: the current results can be saved to preserve them. To do so, go to File &#8594; Save &#8594; Results (or press CTRL + S), as can be seen in <b>Figure 14a</b>.
-      <p align="center"><br/><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/8ce5684a-d43d-4c7a-97f8-86e7924583fc"><br/>
+      <p align="center"><br/><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/6d18e873-7936-4c0f-b5fe-d957c80ff505"><br/>
       <b>Figure 14a: Open and Save results as well as the parameters used in the search.</b></p>
-      &emsp;&emsp;2.3.4.1 <b>Save Results as mzIdentML file</b>: the current results can also be saved in mzIdentML 1.2 format. To do so, after going to ‘<i>Save Results</i>’, a new window will open (‘<i>Save as</i>’), then change ‘<i>Save as type</i>’ to mzIdentML 1.2 Result File (<i>.mzid</i>), as can be seen in <b>Figure 14b</b>.
-      <p align="center"><br/><img width="45%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/91e58587-07a3-42f0-80b6-a7517ccfd897"><br/>
-      <b>Figure 14b: Save the results in mzIdentML 1.2 format.</b></p>
-      &emsp;2.3.5 <b>Save Parameters</b>: the search and post processing parameters used in the search can be exported. To do so, go to File &#8594; Save &#8594; Parameters (or press ALT + W), as can be seen in <b>Figure 14</b>.<br/>
-      &emsp;2.3.6 <b>Report</b>: Scout allows to export displayed reports, such as CSMs (filtered results), Residue Pairs, PPIs and unfiltered CSMs as well as the import file used on XlinkCyNET to visualize the protein-protein interaction network. (<b>Figure 15</b>
-      <p align="center"><br/><img width="45%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/84a62eea-b81a-49fe-ae0f-5d2c566480b4"><br/>
+      &emsp;&emsp;2.3.4.1 <b>Save Results as mzIdentML file</b>: the current results can also be saved in mzIdentML 1.2 or mzIdentML 1.3 format. To do so, after going to ‘<i>Save Results</i>’, a new window will open (‘<i>Save as</i>’), then change ‘<i>Save as type</i>’ to mzIdentML 1.2 (or 1.3) Result File (<i>.mzid</i>), as can be seen in <b>Figure 14b</b>.
+      <p align="center"><br/><img width="45%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/22e7d726-8b2d-496a-b504-ab707fc8a065"><br/>
+      <b>Figure 14b: Save the results in mzIdentML 1.2 or mzIdentML 1.3 format.</b></p>
+      &emsp;2.3.5 <b>Save Parameters</b>: the search and post processing parameters used in the search can be exported. To do so, go to File &#8594; Save &#8594; Parameters (or press ALT + W), as can be seen in <b>Figure 15</b>.<br/><br/>
+      &emsp;2.3.6 <b>Report</b>: Scout allows to export displayed reports, such as CSMs (filtered results), Residue Pairs, PPIs and unfiltered CSMs as well as the import file used on XlinkCyNET to visualize the protein-protein interaction network. (<b>Figure 15</b>)
+      <p align="center"><br/><img width="45%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/ca034b3c-5a8e-46c8-930b-b861e421a5c3"><br/>
       <b>Figure 15: Export reports as well as the input file used on XlinkCyNET.</b></p>
       &emsp;2.3.7 <b>Reprocess FDR</b>: the results can be filtered again by using the current post-processing parameters (that can be modified, see item <i><a href="#ref_2_3_2">2.3.2</a></i>). To do so, go to Tools &#8594; Reprocess FDR (or press ALT + F).(<b>Figure 16</b>)
-      <p align="center"><br/><img width="30%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/4aea43ab-486d-4ec2-981f-53bb0e1dde45"><br/>
+      <p align="center"><br/><img width="30%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/8933dd8e-bcae-4f40-afe2-252abe0dd7d4"><br/>
       <b>Figure 16: Reprocess FDR, Import spectra and Statistical analysis features accessed by Tools menu.</b></p>
-      <div id="ref_2_3_8">&emsp;2.3.8 <b>Import Spectra</b>: if the option ‘<i>Spectra saved in the results</i>’ is unchecked (see item <i><a href="#ref_2_2_4_22_1">2.2.4.22.1</a></i>), the identified spectra will not be displayed if the RAW file is not present in the same directory of the results. To import the identified spectra, go to Tools à Import Spectra (or press CTRL+ I) and specify where the RAW files are.<br/><br/></div>
+      <div id="ref_2_3_8">&emsp;2.3.8 <b>Import Spectra</b>: if the option ‘<i>Spectra saved in the results</i>’ is unchecked (see item <i><a href="#ref_2_2_4_22_1">2.2.4.22.1</a></i>), the identified spectra will not be displayed if the RAW file is not present in the same directory of the results. To import the identified spectra, go to Tools &#8594; Import Spectra (or press CTRL+ I) and specify where the RAW files are. (<b>Figure 16</b>)<br/><br/></div>
       &emsp;2.3.9 <b>Statistics</b>: the user can obtain some statistical analysis from the results, such as, the precursor charge distribution (<b>Figure 17a</b>) as well as reaction sites distribution (<b>Figure 17b</b>) based on the identified cross-links. To do so, go to Tools &#8594; Statistical analysis (or press CTRL + Y). (<b>Figure 16</b>)
-      <p align="center"><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/012ebc3a-509e-4764-ac90-0b3f78cdbf93"><br/>
+      <p align="center"><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/7876ba52-2f92-41b2-a8f3-90470ce390a4"><br/>
       <b>Figure 17a: Precursor charge distribution of the identified cross-links.</b><br/><br/>
-      <img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/c6681e24-50ca-4111-9a36-9dac07617d52"><br/>
+      <img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/449c0ee6-8c05-44ef-bc1a-9c457d264b57"><br/>
       <b>Figure 17b: Reaction sites distribution taking into account all identified cross-links.</b>
       </p>
   2.4. <b>Filter from the Scout starting page</b><br/>
-  <p align="justify">&emsp;&emsp;The results can be filtered again with a different FDR from the one that was used for the first round by I) switching to the tab ‘<i>Filter</i>’; II) selecting the folder that contains the identification files (<i>.buf</i>); III) specifying the FASTA file; IV) modifying the post-processing parameters (see item <i><a href="#ref_2_2_5">2.2.5</a></i>); and clicking on ‘<i>Filter</i>’ button (<b>Figure 17</b>). When the filter is finished, a result page opens (see item <i><a href="#ref_2_3">2.3</a></i>).</p>
-  <p align="center"><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/e3c5d844-3523-461c-8332-808b38ce38c4"><br/>
+  <p align="justify">&emsp;&emsp;The results can be filtered again with a different FDR from the one that was used for the first round by I) switching to the tab ‘<i>Filter</i>’; II) selecting the folder that contains the identification files (<i>*.buf</i>); III) specifying the FASTA file; IV) modifying the post-processing parameters (see item <i><a href="#ref_2_2_5">2.2.5</a></i>); and clicking on ‘<i>Filter</i>’ button (<b>Figure 18</b>). When the filter is finished, a result window opens (see item <i><a href="#ref_2_3">2.3</a></i>).</p>
+  &emsp;&#8658; To stop the filter, click on <i>'Cancel'</i> button and confirm.<br/><br/>
+  <p align="center"><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/8745e612-3053-4d99-823d-b199fa4b8e0a"><br/>
   <b>Figure 18: Filter tab window</b></p><br/>
   2.5. <b>Check for updates</b><br/>
-  <p align="justify">&emsp;&emsp;Scout checks for updates on software startup. Additionally, on Help &#8594; Check for updates the user can visualize all releases (and their notes) as well as whether Scout is updated. (<b>Figure 18</b>)</p>
-  <p align="center"><img width="25%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/b0f31dea-72a7-49b2-b5cf-fc4702d8d805"><br/>
+  <p align="justify">&emsp;&emsp;Scout checks for updates on software startup. Additionally, on Help &#8594; Check for updates, the user can visualize all releases (and their notes) as well as whether Scout is updated. If the current Scout version is not up-to-date, users will have the option to update within this window. (<b>Figure 19</b>)</p>
+  <p align="center"><img width="25%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/58dabec2-a326-43da-b0a4-c2229662d5e8"><br/>
   <b>Figure 19: Check for updates window.</b></p><br/>
   <p><b>Closing remarks:</b></p>
   <p>&emsp;&emsp;In conclusion, Scout is a powerful tool for identifying protein-protein interactions using cleavable cross-linkers in proteomic datasets. Its user-friendly interface, customizable search and post-processing parameters, and multiple filtering options make it a versatile tool for protein interaction analysis. Scout can be particularly useful for studying complex biological systems when identifying protein-protein interactions is crucial for understanding their function.  Overall, Scout provides a valuable resource for researchers interested in studying protein-protein interactions at a large scale.</p>
