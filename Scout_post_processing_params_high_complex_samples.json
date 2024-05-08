@@ -1,0 +1,54 @@
+{
+  "defaultCSMLooplinkParams": [
+    "XLScore",
+    "PoissonScore",
+    "MinDDPScore",
+    "DiffPPM",
+    "MinUniqueRPsInInterProteins",
+    "MinUniqueRPsInIntraProteins"
+  ],
+  "defaultCSMInterParams": [
+    "PoissonScore",
+    "MinDDPScore",
+    "DiffPPM",
+    "MinUniqueRPsInInterProteins",
+    "MinUniqueRPsInIntraProteins"
+  ],
+  "CSM_Features": [
+    "PoissonScore",
+    "MinDDPScore",
+    "DiffPPM",
+    "MinUniqueRPsInInterProteins",
+    "MinUniqueRPsInIntraProteins"
+  ],
+  "CSM_FDR": 0.01,
+  "ResPair_Features": [
+    "TopCSMScore",
+    "BestPoisson",
+    "BestMinScore",
+    "MinUniqueRPsInInterProteins",
+    "MinUniqueRPsInIntraProteins"
+  ],
+  "ResPair_FDR": 0.01,
+  "PPI_Features": [
+    "BestClassificationScore",
+    "UniquePepsA_B",
+    "UniquePepsB_A"
+  ],
+  "PPI_FDR": 0.01,
+  "UniquePPIsOnly": false,
+  "UsePythonModels": true,
+  "UseFinalScoringCSMs": false,
+  "GroupedByGene": false,
+  "IsLooplinkFilter": false,
+  "ApplyBoostFDR": false,
+  "ApplyPostProcessingFilters": true,
+  "DiffPPM_Threshold": 3,
+  "Apply_DiffPPM_Threshold": false,
+  "PoissonScore_Threshold": 1.5,
+  "MinDDPScore_Threshold": 0.06,
+  "MinUniqueRPsInInterProteins": true,
+  "MinUniqueRPsInIntraProteins": false,
+  "Independent_FDR_Control": false,
+  "FDRMode": 1
+}
