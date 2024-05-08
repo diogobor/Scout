@@ -44,8 +44,7 @@ The following workflow demonstrates how to perform a search using _Scout_.<br/>
       &emsp;<i>PS: If for some reason the Scout closes, the search can continue from the point it was paused. To do this, just set the same parameters again and press the start button.</i><br/>
       &emsp;&#8658; All procedures will be recorded in the <i>Log</i> box. To export it, go to File &#8594; Export log (or press ALT + M).<br/><br/>
       &emsp;2.2.4 <b>Search Parameters</b><br/>
-      Search parameters can be adjusted to optimize the search process. To modify the parameters, navigate to Parameters &#8594; Search (or press ALT + S), as illustrated in <b>Figure 2a</b>, a new window will open (<b>Figure 2b</b>).
-      Search parameters can be adjusted to optimize the search process. To modify the parameters, navigate to Utils &#8594; Parameters &#8594; Search (or press ALT + S), as illustrated in <b>Figure 2a</b>, a new window will open (<b>Figure 2b</b>).
+      Search parameters can be adjusted to optimize the search process. To modify the parameters, navigate to Parameters &#8594; Search (or press ALT + S), as illustrated in <b>Figure 2a</b>, a new window will open (<b>Figure 2b</b>).<br/><br/>
       <p align="center"><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/255baf3a-aaa1-477a-8b20-eecfedbba462"><br/>
       <b>Figure 2a: Search and Post Processing Parameters can be modified on Parameters menu.</b><br/><br/>
       <img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/1a89917b-3876-4123-b3b1-2bb3a73354a6"><br/>
