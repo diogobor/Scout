@@ -22,11 +22,11 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
 
 # Procedures
 
-1. ## Software installation:
+1. ## Software installation
    1.1 Download Scout by clicking on <i>Scout_setup_64bit.msi</i> in the [latest release](https://github.com/diogobor/Scout/releases/).
   <br/>1.2 Install it by double-clicking the previous downloaded file.
 
-2. ## Workflow:
+2. ## Workflow
    The following workflow demonstrates how to perform a search using _Scout_.<br/>
    2.1 Launch <i>Scout</i>: Open the Scout application to access its main window, as shown in <b>Figure 1</b>.<br/>
   <p align="center"><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/c66e1f4e-fb63-403b-af8a-7706e8764383"><br/>
@@ -238,10 +238,10 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
   <p align="center"><img width="25%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/58dabec2-a326-43da-b0a4-c2229662d5e8"><br/>
   <b>Figure 19: Check for updates window.</b></p><br/>
 
-## Closing remarks
+# Closing remarks
   <p>&emsp;&emsp;In conclusion, Scout is a powerful tool for identifying protein-protein interactions using cleavable cross-linkers in proteomic datasets. Its user-friendly interface, customizable search and post-processing parameters, and multiple filtering options make it a versatile tool for protein interaction analysis. Scout can be particularly useful for studying complex biological systems when identifying protein-protein interactions is crucial for understanding their function.  Overall, Scout provides a valuable resource for researchers interested in studying protein-protein interactions at a large scale.</p>
 
-## References
+# References
 <div id="lib_1">[1]	J. A. Vizcaíno et al., “The PRoteomics IDEntifications (PRIDE) database and associated tools: status in 2013,” Nucleic Acids Res., vol. 41, no. Database issue, pp. D1063-1069, Jan. 2013, doi: <a href="https://doi.org/10.1093/nar/gks1262" target="_blank">10.1093/nar/gks1262</a>.</div>
 <div id="lib_2">[2]	Y. Perez-Riverol et al., “PRIDE Inspector Toolsuite: Moving Toward a Universal Visualization Tool for Proteomics Data Standard Formats and Quality Assessment of ProteomeXchange Datasets,” Mol. Cell Proteomics, vol. 15, no. 1, pp. 305–317, Jan. 2016, doi: <a href="https://doi.org/10.1074/mcp.O115.050229" target="_blank">10.1074/mcp.O115.050229</a>.</div>
 <div id="lib_3">[3]	D. B. Lima, Y. Zhu, and F. Liu, “XlinkCyNET: A Cytoscape Application for Visualization of Protein Interaction Networks Based on Cross-Linking Mass Spectrometry Identifications,” J. Proteome Res., vol. 20, no. 4, pp. 1943–1950, Apr. 2021, doi: <a href="https://doi.org/10.1021/acs.jproteome.0c00957" target="_blank">10.1021/acs.jproteome.0c00957</a>.</div>
