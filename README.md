@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="refresh" content="0; url='https://github.com/alphha/project'" />
+    <title>Page Moved</title>
+</head>
+<body>
+    <p>If you are not redirected automatically, follow this <a href="https://github.com/alphha/project">link</a>.</p>
+</body>
+</html>
+
 # Scout
 Interactomics studies play a critical role in elucidating protein structures, functions, and interactions within complex cellular environments. Cross-linking mass spectrometry with cleavable cross-linking reagents (cXL-MS) has emerged as a powerful technique for large-scale interactomics analysis by identifying proximal amino acid pairs in protein samples. However, current computational cXL-MS tools face limitations in proteomic-scale studies, such as being too slow or generating excessive false positives, particularly at the protein-protein interactions level (PPIs). 
 
