@@ -47,7 +47,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
       Search parameters can be adjusted to optimize the search process. To modify the parameters, navigate to Parameters &#8594; Search (or press ALT + S), as illustrated in <b>Figure 2a</b>, a new window will open (<b>Figure 2b</b>).<br/><br/>
       <p align="center"><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/255baf3a-aaa1-477a-8b20-eecfedbba462"><br/>
       <b>Figure 2a: Search and Post Processing Parameters can be modified on Parameters menu.</b><br/><br/>
-      <img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/1a89917b-3876-4123-b3b1-2bb3a73354a6"><br/>
+      <img width="55%" alt="image" src="https://github.com/user-attachments/assets/47ab3d19-df1d-4eee-b199-35dcd78afb46"><br/>
       <b>Figure 2b: Search Parameters window</b></p>
       &emsp;&emsp;2.2.4.1. <i>MS1 PPM Tolerance</i>: Specify the ppm error tolerance for the precursor mass.<br/>
 		  &emsp;&emsp;2.2.4.2. <i>MS2 PPM Tolerance</i>: Specify the ppm error tolerance for fragment ions.<br/>
