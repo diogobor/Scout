@@ -17,7 +17,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
 -	The Scout software, available for download at https://github.com/diogobor/Scout/releases
 
 ## Data files
--	Scout v1.0 is compatible with data files in the formats MS2, Mascot Generic Format (MGF), Bruker® .d files, and Thermo® RAW files.
+-	Scout is compatible with data files in the formats MS2, Mascot Generic Format (MGF), Bruker® .d files, and Thermo® RAW files.
 -	Scout saves results in its _*.scout_ format, in the [mzIdentML 1.2](http://www.psidev.info/mzidentml#mzid12) and [mzIdentML 1.3](http://www.psidev.info/mzidentml#mzid13) proposed by [HUPO Proteomics Standard Initiative](http://www.psidev.info/) to support the identification of cross-linked peptides. We note this is able to perform complete submissions of XL-MS data to PRIDE[<a href="#lib_1">1</a>], and is therefore compatible with the PRIDE Inspector software[<a href="#lib_2">2</a>]. Additionally, the software supports exporting all CSMs, Residue Pairs and PPIs as CSV files, as well as all results to [XlinkCyNET](https://apps.cytoscape.org/apps/xlinkcynet)[<a href="#lib_3">3</a>] for visualization within [Cytoscape](https://cytoscape.org/)[<a href="#lib_4">4</a>].
 
 # Procedures
@@ -71,9 +71,9 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.10.1.4. <i>C-Terminal</i>: Check this option if the new enzyme cleaves at the C-terminus of the peptide; otherwise, cleavage will occur at the N-terminus.<br/>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Click on the ‘<i>Confirm</i>’ button to incorporate the new enzyme into the Enzymes table. Afterwards, return to <i><a href="#ref_2_2_4_10">2.2.4.10</a></i>.<br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.10.2 To remove an Enzyme, press ‘<i>Del</i>’ key. A confirmation message will be displayed. Confirm it to proceed.<br/><br/>
-&emsp;&emsp;2.2.4.11. <i>Enzyme specificity</i>: select an enzyme specificity from the list: full specific or semi-specific.<br/>
-&emsp;&emsp;2.2.4.12. <i>Cleavable Reagent</i>: select a cleavable cross-linker from the list.<br/>
-&emsp;&emsp;&emsp;&emsp;2.2.4.12.1. <i>Add Reagent</i>: go to XL Reagents tab and click on ‘<i>Add Reagent</i>’ button (<b>Figure 4a</b>). A new window will be opened (<b>Figure 4b</b>).<br/>
+&emsp;&emsp;2.2.4.11. <i>Enzyme specificity</i>: Select an enzyme specificity from the list: full specific or semi-specific.<br/>
+&emsp;&emsp;2.2.4.12. <i>Cleavable Reagent</i>: Select a cleavable cross-linker from the list.<br/>
+&emsp;&emsp;&emsp;&emsp;2.2.4.12.1. <i>Add Reagent</i>: Go to XL Reagents tab and click on ‘<i>Add Reagent</i>’ button (<b>Figure 4a</b>). A new window will be opened (<b>Figure 4b</b>).<br/>
       <p align="center"><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/b04ab7b4-6066-47b1-8e2c-dabb1eb326cc"><br/>
       <b>Figure 4a: Chemical cross-linkers window: on this tab, new reagents can be added or removed.</b><br/><br/>
       <img width="35%" alt="image" src="https://github.com/user-attachments/assets/3e2ffe0d-5d84-40ce-b3c5-3c6640f37eee"><br/>
@@ -106,7 +106,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
       &emsp;&emsp;&emsp;&emsp;Click on the ‘<i>Confirm</i>’ button to incorporate the new modification into the Modification table.<br/>
       &emsp;&emsp;&emsp;&emsp;<i><b>PS: Upon completing this process, ensure the new post-translational modification is checked in ‘<u>Use</u>’ field for it to be considered in the search.</b></i><br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.15.7 To remove a modification, press the ‘<i>Del</i>’ key. A confirmation message will be displayed. Confirm the action to proceed.<br/><br/>
-      &emsp;&emsp;2.2.4.16. <i>Contaminants</i>: on this tab, the current contaminants can be modified as well as new ones added (<b>Figure 6</b>). <i>PS: All contaminants must be entered in FASTA format (similar to item <a href="#ref_2_2_3">2.2.3</a>).</i>
+      &emsp;&emsp;2.2.4.16. <i>Contaminants</i>: On this tab, the current contaminants can be modified as well as new ones added (<b>Figure 6</b>). <i>PS: All contaminants must be entered in FASTA format (similar to item <a href="#ref_2_2_3">2.2.3</a>).</i>
       <p align="center"><br/><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/ae9bd24e-1224-451e-97b5-c41b4280dea6"><br/>
       <b>Figure 6: Contaminants tab: all contaminant sequences can be modified as well as new ones can be added.</b></p>
       <div id="ref_2_2_4_17">&emsp;&emsp;2.2.4.17. <i>Export</i>: Choose this option to save the current parameters to a file.</div>
@@ -127,14 +127,14 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
       &emsp;&emsp;&emsp;&emsp;2.2.4.22.8. <i>Maximum fragment bin m/z</i>: Specify the maximum m/z to be vectorized.<br/><br/>
       &emsp;&emsp;&emsp;&emsp;<b>Explanation on ‘<i>Binning</i>’</b>: We refer to binning mass spectra into vectors as the process of discretization of continuous m/z values by partitioning them into predefined bins. The process consists of establishing an offset (in Da) and a bin width (in Da) to define the initial point and bin size, respectively. Each bin encompasses a specific m/z range, and peaks are allocated to the corresponding bin based on their m/z value. Subsequently, the intensity values of peaks within each bin are aggregated, in our case, by summation. The output entails a vector of intensity values, with each entry representing a distinct bin. This vectorial representation streamlines mass spectral data manipulation and comparison, facilitating bioinformatics analyses. Therefore, the binning loosely refers to the MS/MS tolerance.<br/><br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.22.9. <i>No. Isotopic Possibilities</i>: The precursor mass stored in raw data files may not correspond to the monoisotopic peak. This option allows the software to find the correct monoisotopic peak, which is required to identify the molecule but at the cost of opening up the search space. If a high number of isotopic possibilities is set, the search space will increase accordingly and impact Scout’s sensitivity negatively.<br/>
-      &emsp;&emsp;&emsp;&emsp;2.2.4.22.10. <i>Metabolic labelling search</i>: check this option to perform SILAC search.<br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.22.10.1 <i>Add Group</i>: a new window will open to add the groups for labelling peptides, e.g., heavy and light groups as well as their amino acids can be added in this feature.<br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.22.10.2 <i>Hybrid mode</i>: check this option to find not only heavy-heavy / light-light peptides, but also heavy-light/light-heavy ones.<br/>
-      &emsp;&emsp;&emsp;&emsp;2.2.4.22.11. <i>Isobaric labelling search</i>: check this option to perform Isobaric labelling search (e.g., TMT, iTRAQ).<br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.22.11.1 <i>Add Reagent</i>: a new window will open to set the reagent up.<br/>
+      &emsp;&emsp;&emsp;&emsp;2.2.4.22.10. <i>Metabolic labelling search</i>: Check this option to perform SILAC search.<br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.22.10.1 <i>Add Group</i>: A new window will open to add the groups for labelling peptides, e.g., heavy and light groups as well as their amino acids can be added in this feature.<br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.22.10.2 <i>Hybrid mode</i>: Check this option to find not only heavy-heavy / light-light peptides, but also heavy-light/light-heavy ones.<br/>
+      &emsp;&emsp;&emsp;&emsp;2.2.4.22.11. <i>Isobaric labelling search</i>: Check this option to perform Isobaric labelling search (e.g., TMT, iTRAQ).<br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.22.11.1 <i>Add Reagent</i>: A new window will open to set the reagent up.<br/>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.22.11.1.1 <i>Reagent</i>: Select a reagent. If the desired reagent is not in the list, click on the <i>'Add'</i> button.<br/>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.4.22.11.1.2 <i>Free residue tolerance</i>: Set the minimum number of residues that TMT will not react.<br/>
-      &emsp;&emsp;&emsp;&emsp;2.2.4.22.12. <i>Target-decoy fusion mode</i>: check this option to perform a search integrating the target and decoy protein sequences into a single sequence.<br/>
+      &emsp;&emsp;&emsp;&emsp;2.2.4.22.12. <i>Target-decoy fusion mode</i>: Check this option to perform a search integrating the target and decoy protein sequences into a single sequence.<br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.22.13. <i>Export</i>: See <i><a href="#ref_2_2_4_17">2.2.4.17</a>.</i><br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.22.14. <i>Load</i>: See <i><a href="#ref_2_2_4_18">2.2.4.18</a>.</i><br/>
       &emsp;&emsp;&emsp;&emsp;2.2.4.22.15. <i>As default</i>: See <i><a href="#ref_2_2_4_19">2.2.4.19</a>.</i><br/>
@@ -170,7 +170,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
       <img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/d4e583ab-80ab-40ef-aa58-e2a473f506ea"><br/>
       <b>Figure 10e: List of Residue Pairs from a specific PPI.</b>
       </p>
-      &emsp;2.3.1 <b>Filter results</b>: results contain FDR filtered identifications on all levels – in the graphical user interface, personal filters can be applied:</br>
+      &emsp;2.3.1 <b>Filter results</b>: Results contain FDR filtered identifications on all levels – in the graphical user interface, personal filters can be applied:</br>
       &emsp;&emsp;2.3.1.1. <b><i>CSM level</i></b>: In this tab (<b>Figure 9</b>), the CSMs are displayed according to the specified filter parameters.</br>
       &emsp;&emsp;&emsp;&emsp;2.3.1.1.1 <i>Scan</i>: Specify the scan number to be displayed.</br>
       &emsp;&emsp;&emsp;&emsp;2.3.1.1.2 <i>Score</i>: Specify the score cutoff. All CSMs with a score greater than ‘<i>Score</i>’ will be displayed.</br>
@@ -181,7 +181,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
       &emsp;&emsp;&emsp;&emsp;2.3.1.1.7 Click on ‘<i>Filter</i>’ button or press <i>Enter</i> to perform the filter.</br>
       &emsp;&emsp;&emsp;&emsp;2.3.1.1.8 Click on ‘<i>Reset</i>’ button to restore default result display.</br>
       &emsp;&emsp;&emsp;&emsp;2.3.1.1.9. <i>Summary</i>: In this box, the number of identified CSMs will be displayed as well as the calculated FDR.</br><br/>
-      &emsp;&emsp;2.3.1.2. <b><i>Residue Pair level</i></b>: on this tab, the residue pairs will be displayed according to the specified filter parameters (<b>Figure 11</b>).</br>
+      &emsp;&emsp;2.3.1.2. <b><i>Residue Pair level</i></b>: On this tab, the residue pairs will be displayed according to the specified filter parameters (<b>Figure 11</b>).</br>
       <p align="center"><br/><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/1eaa24e7-20f4-482a-9b4f-ebbaa209065a"><br/>
       <b>Figure 11: Residue Pairs tab</b></p>
       &emsp;&emsp;&emsp;&emsp;2.3.1.2.1 <i>Score</i>: Specify the score cutoff. All Residue Pairs with a score greater than ‘Score’ will be displayed.<br/>
@@ -191,7 +191,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
       &emsp;&emsp;&emsp;&emsp;2.3.1.2.5 Click on ‘<i>Filter</i>’ button or press <i>Enter</i> to perform the filter.<br/>
       &emsp;&emsp;&emsp;&emsp;2.3.1.2.6 Click on ‘<i>Reset</i>’ button to restore the results.<br/>
       &emsp;&emsp;&emsp;&emsp;2.3.1.2.7. <i>Summary</i>: In this box, the number of identified Residue Pairs will be displayed as well as the calculated FDR.<br/><br/>
-      &emsp;&emsp;2.3.1.3. <b><i>PPI level</i></b>: on this tab, the PPIs will be displayed according to the specified filter parameters (<b>Figure 12</b>)
+      &emsp;&emsp;2.3.1.3. <b><i>PPI level</i></b>: On this tab, the PPIs will be displayed according to the specified filter parameters (<b>Figure 12</b>)
       <p align="center"><br/><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/d79c669f-b8e5-4323-93d2-b3999644e6dc"><br/>
       <b>Figure 12: PPIs tab</b></p>
       &emsp;&emsp;&emsp;&emsp;2.3.1.3.1 <i>Score</i>: Specify the score cutoff. All PPIs with a score greater than ‘<i>Score</i>’ will be displayed.<br/>
@@ -202,16 +202,16 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
       &emsp;&emsp;&emsp;&emsp;2.3.1.3.6 Click on ‘<i>Filter</i>’ button or press <i>Enter</i> to filter the results.<br/>
       &emsp;&emsp;&emsp;&emsp;2.3.1.3.7 Click on ‘<i>Reset</i>’ button to restore the results.<br/>
       &emsp;&emsp;&emsp;&emsp;2.3.1.3.8. <i>Summary</i>: in this box, the number of identified PPIs will be displayed as well as the calculated FDR.<br/><br/>
-      <div id="ref_2_3_2">&emsp;&emsp;2.3.2 <b><i>Parameters</i></b>: both search and post processing parameters used in the search can be visualized on this tab. (<b>Figure 13a and b</b>)</div>
+      <div id="ref_2_3_2">&emsp;&emsp;2.3.2 <b><i>Parameters</i></b>: Both search and post processing parameters used in the search can be visualized on this tab. (<b>Figure 13a and b</b>)</div>
       <p align="center"><br/><img width="30%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/bb7bb3b4-1a8f-44e6-afea-d2a457c70212">&emsp;<img width="29.95%" alt="image" src="https://github.com/user-attachments/assets/a1e6e959-77ee-4ab5-968c-d9067815c471"><br/>
       <b>Figure 13: Search and post processing parameters can be visualized on this tab (Figure 13a and 13b, respectively).</b></p>
-      &emsp;&emsp;2.3.2.1 <b>Post processing parameters</b>: the parameters used to perform FDR on CSM, Residue Pair and PPI levels can be modified to improve the results. To do so, click on <i>'Edit'</i> button and change the parameters (<b>Figure 13 b</b>) (<i>Similar to <a href="#ref_2_2_5">2.2.5</a></i>). Afterwards, a new filter will be performed.<br/><br/>
-      &emsp;2.3.3 <b>Open Results</b>: new Scout results can be opened (<i>*.scout file</i>). To do so, go to File &#8594; Open Results (or press CTRL + O), as can be seen in <b>Figure 14a</b>. <i>PS: Multiple files can be opened if all of them used the same parameters in the search</i>.<br/>
+      &emsp;&emsp;2.3.2.1 <b>Post processing parameters</b>: The parameters used to perform FDR on CSM, Residue Pair and PPI levels can be modified to improve the results. To do so, click on <i>'Edit'</i> button and change the parameters (<b>Figure 13 b</b>) (<i>Similar to <a href="#ref_2_2_5">2.2.5</a></i>). Afterwards, a new filter will be performed.<br/><br/>
+      &emsp;2.3.3 <b>Open Results</b>: New Scout results can be opened (<i>*.scout file</i>). To do so, go to File &#8594; Open Results (or press CTRL + O), as can be seen in <b>Figure 14a</b>. <i>PS: Multiple files can be opened if all of them used the same parameters in the search</i>.<br/>
       &emsp;&#8658; Results can also be opened from the Scout starting page by clicking on File menu &#8594; Open Results (or pressing CTRL + O).<br/><br/>
-      &emsp;2.3.4 <b>Save Results</b>: the current results can be saved to preserve them. To do so, go to File &#8594; Save &#8594; Results (or press CTRL + S), as can be seen in <b>Figure 14a</b>.
+      &emsp;2.3.4 <b>Save Results</b>: The current results can be saved to preserve them. To do so, go to File &#8594; Save &#8594; Results (or press CTRL + S), as can be seen in <b>Figure 14a</b>.
       <p align="center"><br/><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/6d18e873-7936-4c0f-b5fe-d957c80ff505"><br/>
       <b>Figure 14a: Open and Save results as well as the parameters used in the search.</b></p>
-      &emsp;&emsp;2.3.4.1 <b>Save Results as mzIdentML file</b>: the current results can also be saved in mzIdentML 1.2 or mzIdentML 1.3 format. To do so, after going to ‘<i>Save Results</i>’, a new window will open ('<i>Save as</i>'), then change ‘<i>Save as type</i>’ to mzIdentML 1.2 (or 1.3) Result File (<i>.mzid</i>), as can be seen in <b>Figure 14b</b>. Type a file name and click on '<i>Save</i>' (or press enter).<br/>
+      &emsp;&emsp;2.3.4.1 <b>Save Results as mzIdentML file</b>: The current results can also be saved in mzIdentML 1.2 or mzIdentML 1.3 format. To do so, after going to ‘<i>Save Results</i>’, a new window will open ('<i>Save as</i>'), then change ‘<i>Save as type</i>’ to mzIdentML 1.2 (or 1.3) Result File (<i>.mzid</i>), as can be seen in <b>Figure 14b</b>. Type a file name and click on '<i>Save</i>' (or press enter).<br/>
       &emsp;&emsp;&#8658; <i>PS: Besides the mzIdentML file, a *-specID.ms2 file will also be saved, which holds all the identified MS/MS spectra. Both files are required to proceed with the 'Complete Submission' in the PRIDE[<a href="#lib_1">1</a>] system.</i>
       <p align="center"><br/><img width="45%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/22e7d726-8b2d-496a-b504-ab707fc8a065"><br/>
       <b>Figure 14b: Save the results in mzIdentML 1.2 or mzIdentML 1.3 format.</b></p>
@@ -219,11 +219,11 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
       &emsp;2.3.6 <b>Report</b>: Scout allows to export displayed reports, such as CSMs (filtered results), Residue Pairs, PPIs and unfiltered CSMs as well as the import file used on XlinkCyNET to visualize the protein-protein interaction network. (<b>Figure 15</b>)
       <p align="center"><br/><img width="45%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/ca034b3c-5a8e-46c8-930b-b861e421a5c3"><br/>
       <b>Figure 15: Export reports as well as the input file used on XlinkCyNET.</b></p>
-      &emsp;2.3.7 <b>Reprocess FDR</b>: the results can be filtered again by using the current post-processing parameters (that can be modified, see item <i><a href="#ref_2_3_2">2.3.2</a></i>). To do so, go to Tools &#8594; Reprocess FDR (or press ALT + F).(<b>Figure 16</b>)
+      &emsp;2.3.7 <b>Reprocess FDR</b>: The results can be filtered again by using the current post-processing parameters (that can be modified, see item <i><a href="#ref_2_3_2">2.3.2</a></i>). To do so, go to Tools &#8594; Reprocess FDR (or press ALT + F).(<b>Figure 16</b>)
       <p align="center"><br/><img width="30%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/8933dd8e-bcae-4f40-afe2-252abe0dd7d4"><br/>
       <b>Figure 16: Reprocess FDR, Import spectra and Statistical analysis features accessed by Tools menu.</b></p>
-      <div id="ref_2_3_8">&emsp;2.3.8 <b>Import Spectra</b>: if the option ‘<i>Save spectra in results file</i>’ is unchecked (see item <i><a href="#ref_2_2_4_22_1">2.2.4.22.1</a></i>), the identified spectra will not be displayed if the RAW file is not present in the same directory of the results. To import the identified spectra, go to Tools &#8594; Import Spectra (or press CTRL+ I) and specify where the RAW files are. (<b>Figure 16</b>)<br/><br/></div>
-      &emsp;2.3.9 <b>Statistics</b>: the user can obtain some statistical analysis from the results, such as, the precursor charge distribution (<b>Figure 17a</b>) as well as reaction sites distribution (<b>Figure 17b</b>) based on the identified cross-links. To do so, go to Tools &#8594; Statistical analysis (or press CTRL + Y). (<b>Figure 16</b>)<br/><br/>
+      <div id="ref_2_3_8">&emsp;2.3.8 <b>Import Spectra</b>: If the option ‘<i>Save spectra in results file</i>’ is unchecked (see item <i><a href="#ref_2_2_4_22_1">2.2.4.22.1</a></i>), the identified spectra will not be displayed if the RAW file is not present in the same directory of the results. To import the identified spectra, go to Tools &#8594; Import Spectra (or press CTRL+ I) and specify where the RAW files are. (<b>Figure 16</b>)<br/><br/></div>
+      &emsp;2.3.9 <b>Statistics</b>: The user can obtain some statistical analysis from the results, such as, the precursor charge distribution (<b>Figure 17a</b>) as well as reaction sites distribution (<b>Figure 17b</b>) based on the identified cross-links. To do so, go to Tools &#8594; Statistical analysis (or press CTRL + Y). (<b>Figure 16</b>)<br/><br/>
       <p align="center"><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/7876ba52-2f92-41b2-a8f3-90470ce390a4"><br/>
       <b>Figure 17a: Precursor charge distribution of the identified cross-links.</b><br/><br/>
       <img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/449c0ee6-8c05-44ef-bc1a-9c457d264b57"><br/>
