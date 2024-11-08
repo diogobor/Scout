@@ -150,7 +150,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
       &emsp;&emsp;2.2.6.4. <i>FDR on CSM level</i>: Specify the FDR on CSM level.<br/>
       &emsp;&emsp;2.2.6.5. <i>FDR on Residue Pair level</i>: Specify the FDR on Residue Pair level.<br/>
       &emsp;&emsp;2.2.6.6. <i>FDR on PPI level</i>: Specify the FDR on PPI level.<br/>
-      &emsp;&emsp;<div id="ref_2_2_6_7">2.2.6.7. <i>Export</i>: Similar to <i><a href="#ref_2_2_5_17">2.2.5.17</a>.</i></div><br/>
+      <div id="ref_2_2_6_7">&emsp;&emsp;2.2.6.7. <i>Export</i>: Similar to <i><a href="#ref_2_2_5_17">2.2.5.17</a>.</i></div>
       &emsp;&emsp;2.2.6.8. <i>Load</i>: Similar to <i><a href="#ref_2_2_5_18">2.2.5.18</a>.</i><br/>
       &emsp;&emsp;2.2.6.9. <i>As default</i>: Similar to <i><a href="#ref_2_2_5_19">2.2.5.19</a>.</i><br/>
       &emsp;&emsp;2.2.6.10. <i>Restore</i>: Similar to <i><a href="#ref_2_2_5_20">2.2.5.20</a>.</i><br/><br/>
