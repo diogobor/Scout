@@ -240,7 +240,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
   <p align="center"><img width="25%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/58dabec2-a326-43da-b0a4-c2229662d5e8"><br/>
   <b>Figure 19: Check for updates window.</b></p><br/>
   <div id="ref_2_6">2.6. <b>Automation</b><br/>
-   &emsp;&emsp;Scout supports automation from command line.<br/><br/>
+   &emsp;&emsp;Scout supports automation from CLI (Command Line Interface).<br/><br/>
      2.6.1. To do so, open a Terminal (press Win+R, type <i>cmd</i> and press enter).<br/>
      &emsp;&emsp;2.6.1.1 Navigate to the directory where <i>Scout</i> has been installed, <i>e.g.</i>, cd C:\Program Files\Scout.<br/>
      2.6.2 To start a search, the following arguments are required:<br/>
