@@ -239,29 +239,32 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
   <p align="justify">&emsp;&emsp;Scout checks for updates on software startup. Additionally, on Help &#8594; Check for updates, the user can visualize all releases (and their notes) as well as whether Scout is updated. If the current Scout version is not up-to-date, users will have the option to update within this window. (<b>Figure 19</b>)</p>
   <p align="center"><img width="25%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/58dabec2-a326-43da-b0a4-c2229662d5e8"><br/>
   <b>Figure 19: Check for updates window.</b></p><br/>
-  <div id="ref_2_6">2.6. <b>Automation</b><br/>
+  <div id="ref_2_6">2.6. <b>Automation</b></div>
    &emsp;&emsp;Scout supports automation from CLI (Command Line Interface).<br/><br/>
-     2.6.1. To do so, open a Terminal (press Win+R, type <i>cmd</i> and press enter).<br/>
-     &emsp;&emsp;2.6.1.1 Navigate to the directory where <i>Scout</i> has been installed, <i>e.g.</i>, cd C:\Program Files\Scout.<br/>
-     2.6.2 To start a search, the following arguments are required:<br/>
+     &emsp;2.6.1. To do so, open a Terminal (press Win+R, type <i>cmd</i> and press enter).<br/>
+     &emsp;&emsp;2.6.1.1 Navigate to the directory where <i>Scout</i> has been installed, <i>e.g.</i>, cd C:\\Program Files\\Scout.<br/>
+     &emsp;2.6.2 To start a search, the following arguments are required:<br/>
      &emsp;&emsp;2.6.2.1 <code>scout.exe -search search_params_file.json filter_params_file.json</code>.<br/>
      &emsp;&emsp;&emsp;&emsp;2.6.2.1.1 In <code>search_params_file.json</code>, the following parameters must be filled:<br/>
-     <div id="ref_2_6_2_1_1_1">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.2.1.1.1 <b><i>FastaFile</i></b>: The database file needs to be defined with its directory, <i>e.g., C:\my_search\my_db.fasta</i>.</div>
-     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.2.1.1.2 <b><i>RawPath</i></b>: The raw file(s) need(s) to be defined with its directory, <i>e.g., C:\my_search\my_raw_file.raw</i>. Multiple raw files must be separeted with ';', <i>e.g., C:\my_search\my_raw_file_1.raw;C:\my_search\my_raw_file_2.raw;C:\my_search\my_raw_file_3.raw</i>. A folder where the raw files are can be defined instead of raw file(s). In this case, define only the directory, <i>e.g., C:\my_search</i>.<br/>
+     <div id="ref_2_6_2_1_1_1">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.2.1.1.1 <b><i>FastaFile</i></b>: The database file needs to be defined with its directory, <i>e.g., C:\\my_search\\my_db.fasta</i>.</div>
+     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.2.1.1.2 <b><i>RawPath</i></b>: The raw file(s) need(s) to be defined with its directory, <i>e.g., C:\\my_search\\my_raw_file.raw</i>. Multiple raw files must be separeted with ';', <i>e.g., C:\\my_search\\my_raw_file_1.raw;C:\\my_search\\my_raw_file_2.raw;C:\\my_search\\my_raw_file_3.raw</i>. A folder where the raw files are can be defined instead of raw file(s). In this case, define only the directory, <i>e.g., C:\\my_search</i>.<br/>
      <div id="ref_2_6_2_1_1_3">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.2.1.1.3 <b><i>OutputFolder</i></b>: Define a folder where the results will be saved, <i>e.g., C:\my_search\results</i>.</div>
      &emsp;&emsp;&emsp;&emsp;&#8658; The <code>search_params_file.json</code> can be generated according to <a href="#ref_2_2_5_17">2.2.5.17</a>.<br/>
      <div id="ref_2_6_2_1_2">&emsp;&emsp;&emsp;&emsp;2.6.2.1.2 In <code>filter_params_file.json</code>, the following parameters must be filled:</div>
      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.2.1.2.1 <b><i>CSM_FDR</i>, <i>ResPair_FDR</i>, <i>PPI_FDR</i></b>: The FDR values need to be defined with a value between 0 and 1.<br/>
      &emsp;&emsp;&emsp;&emsp;&#8658; The <code>filter_params_file.json</code> can be generated according to <a href="#ref_2_2_6_7">2.2.6.7</a>.<br/><br/>
-     &emsp;&emsp;&emsp;&emsp;&#8658; Once the search starts, a log file will be generated in the output folder.<br/><br/>
-     2.6.3 To filter only the results, the following arguments are required:<br/>
+     &emsp;&emsp;&emsp;&emsp;&#8658; <b><i>Once the search starts, a log file is generated in the output folder.</i></b><br/><br/>
+     &emsp;2.6.3 To filter only the results, the following arguments are required:<br/>
      &emsp;&emsp;2.6.3.1 <code>scout.exe -filter filter_params_file -fasta fasta_file -i path_search_result_files -o path_to_output_files</code>.<br/>
      &emsp;&emsp;&emsp;&emsp;2.6.3.1.1 <code>filter_params_file.json</code>: Similar to <a href="#ref_2_6_2_1_2">2.6.2.1.2</a><br/>
      &emsp;&emsp;&emsp;&emsp;2.6.3.1.2 <code>fasta_file</code>: Similar to <a href="#ref_2_6_2_1_1_1">2.6.2.1.1.1</a><br/>
      &emsp;&emsp;&emsp;&emsp;2.6.3.1.3 <code>path_search_result_files</code>: Define a directory where the search resuts files (*.buf) are.<br/>
-     &emsp;&emsp;&emsp;&emsp;2.6.3.1.4 <code>path_to_output_files</code>: Similar to <a href="#ref_2_6_2_1_1_3">2.6.2.1.1.3</a><br/>
-     
-  </div>
+     &emsp;&emsp;&emsp;&emsp;2.6.3.1.4 <code>path_to_output_files</code>: Similar to <a href="#ref_2_6_2_1_1_3">2.6.2.1.1.3</a><br/><br/>
+     &emsp;&emsp;&emsp;&emsp;&#8658; <b><i>Once the filter starts, a log file is generated in the output folder.</i></b><br/><br/>
+     &emsp;2.6.4 Troubleshooting<br/>
+     &emsp;&emsp;2.6.4.1 <i>Search/Filter does not start</i>: Check the above mentioned parameters <b>are not duplicated</b> in the json files.<br/>
+     &emsp;&emsp;2.6.4.2 <i>CMD opens and closes quickly</i>: Make sure Python is installed on your machine. Check 2.6.4.1.<br/>
+     &emsp;&emsp;2.6.4.3 <i>Log file is saved in the root path of the partition</i>: <i>OutputFolder</i> parameter in <code>search_params_file.json</code> is null or duplicated in the file.
 
 # Closing remarks
   <p>&emsp;&emsp;In conclusion, Scout is a powerful tool for identifying protein-protein interactions using cleavable cross-linkers in proteomic datasets. Its user-friendly interface, customizable search and post-processing parameters, and multiple filtering options make it a versatile tool for protein interaction analysis. Scout can be particularly useful for studying complex biological systems when identifying protein-protein interactions is crucial for understanding their function.  Overall, Scout provides a valuable resource for researchers interested in studying protein-protein interactions at a large scale.</p>
