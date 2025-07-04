@@ -17,7 +17,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
 -	The Scout software, available for download at https://github.com/diogobor/Scout/releases
 
 ## Data files
--	Scout is compatible with data files in the formats MS2, Mascot Generic Format (MGF), Bruker® .d files, and Thermo® RAW files.
+-	Scout is compatible with data files in the formats mzML, MS2, Mascot Generic Format (MGF), Bruker® .d files, and Thermo® RAW files.
 -	Scout saves results in its _*.scout_ format, in the [mzIdentML 1.2](http://www.psidev.info/mzidentml#mzid12) and [mzIdentML 1.3](http://www.psidev.info/mzidentml#mzid13) proposed by [HUPO Proteomics Standard Initiative](http://www.psidev.info/) to support the identification of cross-linked peptides. We note this is able to perform complete submissions of XL-MS data to PRIDE[<a href="#lib_1">1</a>], and is therefore compatible with the PRIDE Inspector software[<a href="#lib_2">2</a>]. Additionally, the software supports exporting all CSMs, Residue Pairs and PPIs as CSV files, as well as all results to [XlinkCyNET](https://apps.cytoscape.org/apps/xlinkcynet)[<a href="#lib_3">3</a>] for visualization within [Cytoscape](https://cytoscape.org/)[<a href="#lib_4">4</a>].
 
 # Procedures
