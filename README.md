@@ -27,7 +27,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
    1.1 Download Scout by clicking on <i>Scout_setup_64bit.msi</i> in the [latest release](https://github.com/diogobor/Scout/releases/).
   <br/>1.2 Install it according to the OS: 
   <br/>&emsp;1.2.1 Windows: by double-clicking in the previous downloaded file (_*.msi_).
-  <br/>&emsp;1.2.2 MacOS or Linux: by uncompressing the previous downloaded file (_*.zip_)
+  <br/>&emsp;1.2.2 Linux or macOS: by uncompressing the previous downloaded file (_*.zip_)
 
 2. ## Workflow
    The following workflow demonstrates how to perform a search using _Scout_.<br/>If you are interested to run the software in _Automation_ mode, go to <a href="#ref_2_6">2.6</a></i>.<br/>
