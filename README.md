@@ -31,7 +31,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
 
 2. ## Workflow
    The following workflow demonstrates how to perform a search using _Scout_.<br/>If you are interested to run the software in _Automation_ mode, go to <a href="#ref_2_6">2.6</a></i>.<br/>
-   _PS: The macOS and Linux versions only work in Automation mode._
+   _PS: Linux and macOS versions only work in Automation mode._
    <br/><br/>
    2.1 (Windows-only) Launch <i>Scout</i>: Open the Scout application to access its main window, as shown in <b>Figure 1</b>.<br/>
   <p align="center"><img width="55%" alt="image" src="https://github.com/user-attachments/assets/c4bd6ee3-5585-43f3-a8d8-ba1a0ef0f989"><br/>
