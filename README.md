@@ -11,10 +11,11 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
 - A computer with a minimum of 16 GB RAM and 4 computing cores is recommended.  However, the software can take advantage of superior configurations.
 
 ## Software
--	Windows 10 (64 bits) or later.
--	Python 3.10 or later.
--	The .NET Core 6 or later.
--	The Scout software, available for download at https://github.com/diogobor/Scout/releases
+-	Windows 10 (64 bits) or later; macOS 15.7.2 (64 bits) or later; Linux (64 bits)
+-	Python 3.12 or later.
+-	.NET Core 9 or later.
+-	MPFR and GMP
+-	Scout software, available for download at https://github.com/diogobor/Scout/releases
 
 ## Data files
 -	Scout is compatible with data files in the formats mzML, MS2, Mascot Generic Format (MGF), Bruker® .d files, and Thermo® RAW files.
@@ -24,11 +25,15 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
 
 1. ## Software installation
    1.1 Download Scout by clicking on <i>Scout_setup_64bit.msi</i> in the [latest release](https://github.com/diogobor/Scout/releases/).
-  <br/>1.2 Install it by double-clicking the previous downloaded file.
+  <br/>1.2 Install it according to the OS: 
+  <br/>&emsp;1.2.1 Windows: by double-clicking in the previous downloaded file (_*.msi_).
+  <br/>&emsp;1.2.2 MacOS or Linux: by uncompressing the previous downloaded file (_*.zip_)
 
 2. ## Workflow
-   The following workflow demonstrates how to perform a search using _Scout_.<br/>If you are interested to run the software in _Automation_ mode, go to <a href="#ref_2_6">2.6</a></i>.<br/><br/>
-   2.1 Launch <i>Scout</i>: Open the Scout application to access its main window, as shown in <b>Figure 1</b>.<br/>
+   The following workflow demonstrates how to perform a search using _Scout_.<br/>If you are interested to run the software in _Automation_ mode, go to <a href="#ref_2_6">2.6</a></i>.<br/>
+   _PS: The macOS and Linux versions only work in Automation mode._
+   <br/><br/>
+   2.1 (Windows-only) Launch <i>Scout</i>: Open the Scout application to access its main window, as shown in <b>Figure 1</b>.<br/>
   <p align="center"><img width="55%" alt="image" src="https://github.com/user-attachments/assets/c4bd6ee3-5585-43f3-a8d8-ba1a0ef0f989"><br/>
   <b>Figure 1: Graphical User Interface of Scout’s main window.</b></p>
    2.2 <b>Initial Setup</b><br/>
@@ -241,29 +246,66 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
   <b>Figure 19: Check for updates window.</b></p><br/>
   <div id="ref_2_6">2.6. <b>Automation</b></div>
    &emsp;&emsp;Scout supports automation from CLI (Command Line Interface).<br/><br/>
-     &emsp;2.6.1. To do so, open a Terminal (press Win+R, type <i>cmd</i> and press enter).<br/>
-     &emsp;&emsp;2.6.1.1 Navigate to the directory where <i>Scout</i> has been installed, <i>e.g.</i>, cd C:\\Program Files\\Scout.<br/>
-     &emsp;2.6.2 To start a search, the following arguments are required:<br/>
-     &emsp;&emsp;2.6.2.1 <code>scout.exe -search search_params_file.json filter_params_file.json</code>.<br/>
-     &emsp;&emsp;&emsp;&emsp;2.6.2.1.1 In <code>search_params_file.json</code>, the following parameters must be filled:<br/>
-     <div id="ref_2_6_2_1_1_1">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.2.1.1.1 <b><i>FastaFile</i></b>: The database file needs to be defined with its directory, <i>e.g., C:\\my_search\\my_db.fasta</i>.</div>
-     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.2.1.1.2 <b><i>RawPath</i></b>: The raw file(s) need(s) to be defined with its directory, <i>e.g., C:\\my_search\\my_raw_file.raw</i>. Multiple raw files must be separeted with ';', <i>e.g., C:\\my_search\\my_raw_file_1.raw;C:\\my_search\\my_raw_file_2.raw;C:\\my_search\\my_raw_file_3.raw</i>. A folder where the raw files are can be defined instead of raw file(s). In this case, define only the directory, <i>e.g., C:\\my_search</i>.<br/>
-     <div id="ref_2_6_2_1_1_3">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.2.1.1.3 <b><i>OutputFolder</i></b>: Define a folder where the results will be saved, <i>e.g., C:\my_search\results</i>.</div>
-     &emsp;&emsp;&emsp;&emsp;&#8658; The <code>search_params_file.json</code> can be generated according to <a href="#ref_2_2_5_17">2.2.5.17</a>.<br/>
-     <div id="ref_2_6_2_1_2">&emsp;&emsp;&emsp;&emsp;2.6.2.1.2 In <code>filter_params_file.json</code>, the following parameters must be filled:</div>
-     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.2.1.2.1 <b><i>CSM_FDR</i>, <i>ResPair_FDR</i>, <i>PPI_FDR</i></b>: The FDR values need to be defined with a value between 0 and 1.<br/>
-     &emsp;&emsp;&emsp;&emsp;&#8658; The <code>filter_params_file.json</code> can be generated according to <a href="#ref_2_2_6_7">2.2.6.7</a>.<br/><br/>
-     &emsp;&emsp;&emsp;&emsp;&#8658; <b><i>Once the search starts, a log file is generated in the output folder.</i></b><br/><br/>
-     &emsp;2.6.3 To filter only the results, the following arguments are required:<br/>
-     &emsp;&emsp;2.6.3.1 <code>scout.exe -filter filter_params_file -fasta fasta_file -i path_search_result_files -o path_to_output_files</code>.<br/>
-     &emsp;&emsp;&emsp;&emsp;2.6.3.1.1 <code>filter_params_file.json</code>: Similar to <a href="#ref_2_6_2_1_2">2.6.2.1.2</a><br/>
-     &emsp;&emsp;&emsp;&emsp;2.6.3.1.2 <code>fasta_file</code>: Similar to <a href="#ref_2_6_2_1_1_1">2.6.2.1.1.1</a><br/>
-     &emsp;&emsp;&emsp;&emsp;2.6.3.1.3 <code>path_search_result_files</code>: Define a directory where the search resuts files (*.buf) are.<br/>
-     &emsp;&emsp;&emsp;&emsp;2.6.3.1.4 <code>path_to_output_files</code>: Similar to <a href="#ref_2_6_2_1_1_3">2.6.2.1.1.3</a><br/><br/>
+     &emsp;2.6.1. Windows platform <br/>
+     &emsp;&emsp;2.6.1.1 To do so, open a Terminal (press Win+R, type <i>cmd</i> and press enter).<br/>
+     &emsp;&emsp;&emsp;2.6.1.1.1 Navigate to the directory where <i>Scout</i> has been installed, <i>e.g.</i>, cd C:\\Program Files\\Scout.<br/>
+     &emsp;&emsp;2.6.1.2 To start a search, the following arguments are required:<br/>
+     &emsp;&emsp;&emsp;2.6.1.2.1 <code>scout.exe -search search_params_file.json filter_params_file.json</code>.<br/>
+     <div id="ref_2_6_1_2_1_1">&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.2.1.1 In <code>search_params_file.json</code>, the following parameters must be filled:</div>
+     <div id="ref_2_6_1_2_1_1_1">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.2.1.1.1 <b><i>FastaFile</i></b>: The database file needs to be defined with its directory, <i>e.g., C:\\my_search\\my_db.fasta (for Windows); /home/my_user/Documents/my_db.fasta (for Linux); /Users/my_user/Documents/my_db.fasta (for macOS)</i>.</div>
+     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.2.1.1.2 <b><i>RawPath</i></b>: The raw file(s) need(s) to be defined with its directory, <i>e.g., C:\\my_search\\my_raw_file.raw (for Windows); /home/my_user/Documents/my_raw_file.raw (for Linux); /Users/my_user/Documents/my_raw_file.raw (for macOS)</i>. Multiple raw files must be separeted with ';', <i>e.g., C:\\my_search\\my_raw_file_1.raw;C:\\my_search\\my_raw_file_2.raw;C:\\my_search\\my_raw_file_3.raw</i>. A folder where the raw files are can be defined instead of raw file(s). In this case, define only the directory, <i>e.g., C:\\my_search (for Windows); /home/my_user/Documents/scout_results (for Linux); /Users/my_user/Documents/scout_results (for macOS)</i>.<br/>
+     <div id="ref_2_6_1_2_1_1_3">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.2.1.1.3 <b><i>OutputFolder</i></b>: Define a folder where the results will be saved, <i>e.g., C:\my_search\results</i>.</div>
+     &emsp;&emsp;&emsp;&emsp;&emsp;&#8658; The <code>search_params_file.json</code> can be generated according to <a href="#ref_2_2_5_17">2.2.5.17</a>.<br/>
+     <div id="ref_2_6_1_2_1_2">&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.2.1.2 In <code>filter_params_file.json</code>, the following parameters must be filled:</div>
+     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.2.1.2.1 <b><i>CSM_FDR</i>, <i>ResPair_FDR</i>, <i>PPI_FDR</i></b>: The FDR values need to be defined with a value between 0 and 1.<br/>
+     &emsp;&emsp;&emsp;&emsp;&emsp;&#8658; The <code>filter_params_file.json</code> can be generated according to <a href="#ref_2_2_6_7">2.2.6.7</a>.<br/><br/>
+     &emsp;&emsp;&emsp;&emsp;&emsp;&#8658; <b><i>Once the search starts, a log file is generated in the output folder.</i></b><br/><br/>
+     &emsp;&emsp;&emsp;&emsp;&emsp;&#8658; <i>In the end, four files will be generated: filtered_csms.csv, filtered_looplinks.csv, filtered_residue_pairs.csv and filtered_ppis.csv.</i><br/><br/>
+     &emsp;&emsp;2.6.1.3 To filter only the results, the following arguments are required:<br/>
+     &emsp;&emsp;&emsp;2.6.1.3.1 <code>scout.exe -filter filter_params_file -fasta fasta_file -i path_search_result_files -o path_to_output_files</code>.<br/>
+     <div id="ref_2_6_1_3_1_1">&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.3.1.1 <code>filter_params_file.json</code>: Similar to <a href="#ref_2_6_1_2_1_2">2.6.1.2.1.2</a></div>
+     &emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.3.1.2 <code>fasta_file</code>: Similar to <a href="#ref_2_6_1_2_1_1_1">2.6.1.2.1.1.1</a><br/>
+     &emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.3.1.3 <code>path_search_result_files</code>: Define a directory where the search resuts files (*.buf) are.<br/>
+     &emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.3.1.4 <code>path_to_output_files</code>: Similar to <a href="#ref_2_6_1_2_1_1_3">2.6.1.2.1.1.3</a><br/><br/>
      &emsp;&emsp;&emsp;&emsp;&#8658; <b><i>Once the filter starts, a log file is generated in the output folder.</i></b><br/><br/>
+     &emsp;&emsp;&emsp;&emsp;&#8658; <i>In the end, four files will be generated: filtered_csms.csv, filtered_looplinks.csv, filtered_residue_pairs.csv and filtered_ppis.csv.</i><br/><br/>
+     &emsp;&emsp;2.6.1.4 Scout also allows to export unfiltered CSMs. To do so, the following arguments are required:<br/>
+     &emsp;&emsp;&emsp;2.6.1.4.1 <code>scout.exe -unfiltered -i scout_file -o path_to_output_file</code>.<br/>
+     <div id="ref_2_6_1_4_1_1">&emsp;&emsp;&emsp;&emsp;2.6.1.4.1.1 <code>scout_file</code>: <i>*.scout</i> generated at the end of the process.</div>
+     &emsp;&emsp;&emsp;&emsp;2.6.1.4.1.2 <code>path_to_output_file</code>: Similar to <a href="#ref_2_6_1_2_1_1_3">2.6.1.2.1.1.3</a><br/><br/>
+     &emsp;2.6.2. Linux and macOS platform <br/>
+     &emsp;&emsp;2.6.2.1 Open a Terminal and navigate to the directory where <i>Scout</i> has been installed, <i>e.g., cd /home/my_user/Documents/Scout (for Linux); cd /Users/my_user/Documents/Scout</i>.<br/>
+     &emsp;&emsp;2.6.2.2 Install MPFR and GMP libraries<br/>
+     &emsp;&emsp;2.6.2.2.1 Linux: <code>sudo apt install libmpfr-dev libgmp-dev</code><br/>
+     &emsp;&emsp;&emsp;2.6.2.2.1.1 Check where the libraries have been installed: <code>whereis libmpfr.so</code><br/>
+     &emsp;&emsp;&emsp;2.6.2.2.1.2 If the path is not one of these:<br/>
+     &emsp;&emsp;&emsp;"/usr/lib"<br/>
+     &emsp;&emsp;&emsp;"/usr/local/lib"<br/>
+     &emsp;&emsp;&emsp;"/lib"<br/>
+     &emsp;&emsp;&emsp;"/lib64"<br/>
+     &emsp;&emsp;&emsp;"/usr/lib64"<br/>
+     &emsp;&emsp;&emsp;"/usr/lib/x86_64-linux-gnu"<br/>
+     &emsp;&emsp;&emsp;"/opt/homebrew/lib"<br/>
+     &emsp;&emsp;&emsp; edit <i>run_scout.sh</i> in the line 79 to add the path of <i>libmpfr.so</i>.<br/><br/>
+     &emsp;&emsp;2.6.2.2.2 macOS: <code>brew install gmp mpfr</code><br/>
+     &emsp;&emsp;2.6.2.3 Give permission to <i>run_scout.sh</i><br/>
+     &emsp;&emsp;&emsp;2.6.2.3.1 To do so, type <code>chmod +x run_scout.sh</code> and press enter.<br/>
+     &emsp;&emsp;2.6.2.4 To start a search, the following arguments are required:<br/>
+     &emsp;&emsp;&emsp;2.6.2.4.1 <code>./run_scout.sh -search search_params_file.json filter_params_file.json</code>.<br/>
+     &emsp;&emsp;&emsp;2.6.2.4.2 Instructions similar to <a href="#ref_2_6_1_2_1_1">2.6.1.2.1.1</a>.<br/></br>
+     &emsp;&emsp;&emsp;&#8658; <b><i>Once the search starts, a log file is generated in the output folder.</i></b><br/><br/>
+     &emsp;&emsp;&emsp;&#8658; <i>In the end, four files will be generated: filtered_csms.csv, filtered_looplinks.csv, filtered_residue_pairs.csv and filtered_ppis.csv.</i><br/><br/>
+     &emsp;&emsp;2.6.2.5 To filter only the results, the following arguments are required:<br/>
+     &emsp;&emsp;&emsp;2.6.2.5.1 <code>./run_scout.sh -filter filter_params_file -fasta fasta_file -i path_search_result_files -o path_to_output_files</code>.<br/>
+     &emsp;&emsp;&emsp;2.6.2.5.2 Instructions similar to <a href="#ref_2_6_1_3_1_1">2.6.1.3.1.1</a>.<br/></br>
+     &emsp;&emsp;&emsp;&#8658; <b><i>Once the search starts, a log file is generated in the output folder.</i></b><br/><br/>
+     &emsp;&emsp;&emsp;&#8658; <i>In the end, four files will be generated: filtered_csms.csv, filtered_looplinks.csv, filtered_residue_pairs.csv and filtered_ppis.csv.</i><br/><br/>
+     &emsp;&emsp;2.6.2.6 Scout also allows to export unfiltered CSMs. To do so, the following arguments are required:<br/>
+     &emsp;&emsp;&emsp;2.6.2.6.1 <code>./run_scout.sh -unfiltered -i scout_file -o path_to_output_file</code>.<br/>
+     &emsp;&emsp;&emsp;2.6.2.6.2 Instructions similar to <a href="#ref_2_6_1_4_1_1">2.6.1.4.1.1</a>.<br/></br>
      &emsp;2.6.4 Troubleshooting<br/>
      &emsp;&emsp;2.6.4.1 <i>Search/Filter does not start</i>: Check the above mentioned parameters <b>are not duplicated</b> in the json files.<br/>
-     &emsp;&emsp;2.6.4.2 <i>CMD opens and closes quickly</i>: Make sure Python is installed on your machine. Check 2.6.4.1.<br/>
+     &emsp;&emsp;2.6.4.2 <i>Terminal opens and closes quickly</i>: Make sure Python is installed on your machine. Check 2.6.4.1.<br/>
      &emsp;&emsp;2.6.4.3 <i>Log file is saved in the root path of the partition</i>: <i>OutputFolder</i> parameter in <code>search_params_file.json</code> is null or duplicated in the file.
 
 # Closing remarks
