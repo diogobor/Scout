@@ -246,7 +246,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
   <b>Figure 19: Check for updates window.</b></p><br/>
   <div id="ref_2_6">2.6. <b>Automation</b></div>
    &emsp;&emsp;Scout supports automation from CLI (Command Line Interface).<br/><br/>
-     &emsp;2.6.1. Windows platform <br/>
+     &emsp;2.6.1. <b>Windows platform</b><br/>
      &emsp;&emsp;2.6.1.1 To do so, open a Terminal (press Win+R, type <i>cmd</i> and press enter).<br/>
      &emsp;&emsp;&emsp;2.6.1.1.1 Navigate to the directory where <i>Scout</i> has been installed, <i>e.g.</i>, cd C:\\Program Files\\Scout.<br/>
      &emsp;&emsp;2.6.1.2 To start a search, the following arguments are required:<br/>
@@ -273,8 +273,8 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
      &emsp;&emsp;&emsp;2.6.1.4.1 <code>scout.exe -unfiltered -i scout_file -o path_to_output_file</code>.<br/>
      <div id="ref_2_6_1_4_1_1">&emsp;&emsp;&emsp;&emsp;2.6.1.4.1.1 <code>scout_file</code>: <i>*.scout</i> generated at the end of the process.</div>
      &emsp;&emsp;&emsp;&emsp;2.6.1.4.1.2 <code>path_to_output_file</code>: Similar to <a href="#ref_2_6_1_2_1_1_3">2.6.1.2.1.1.3</a><br/><br/>
-     &emsp;2.6.2. Linux and macOS platform <br/>
-     &emsp;&emsp;2.6.2.1 Open a Terminal and navigate to the directory where <i>Scout</i> has been installed, <i>e.g., cd /home/my_user/Documents/Scout (for Linux); cd /Users/my_user/Documents/Scout</i>.<br/>
+     &emsp;2.6.2. <b>Linux and macOS platform</b><br/>
+     &emsp;&emsp;2.6.2.1 Open a Terminal and navigate to the directory where <i>Scout</i> has been uncompressed, <i>e.g., cd /home/my_user/Documents/Scout (for Linux); cd /Users/my_user/Documents/Scout</i> (for macOS).<br/>
      &emsp;&emsp;2.6.2.2 Install MPFR and GMP libraries<br/>
      &emsp;&emsp;2.6.2.2.1 Linux: <code>sudo apt install libmpfr-dev libgmp-dev</code><br/>
      &emsp;&emsp;&emsp;2.6.2.2.1.1 Check where the libraries have been installed: <code>whereis libmpfr.so</code><br/>
@@ -298,7 +298,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
      &emsp;&emsp;2.6.2.5 To filter only the results, the following arguments are required:<br/>
      &emsp;&emsp;&emsp;2.6.2.5.1 <code>./run_scout.sh -filter filter_params_file -fasta fasta_file -i path_search_result_files -o path_to_output_files</code>.<br/>
      &emsp;&emsp;&emsp;2.6.2.5.2 Instructions similar to <a href="#ref_2_6_1_3_1_1">2.6.1.3.1.1</a>.<br/></br>
-     &emsp;&emsp;&emsp;&#8658; <b><i>Once the search starts, a log file is generated in the output folder.</i></b><br/><br/>
+     &emsp;&emsp;&emsp;&#8658; <b><i>Once the filter starts, a log file is generated in the output folder.</i></b><br/><br/>
      &emsp;&emsp;&emsp;&#8658; <i>In the end, four files will be generated: filtered_csms.csv, filtered_looplinks.csv, filtered_residue_pairs.csv and filtered_ppis.csv.</i><br/><br/>
      &emsp;&emsp;2.6.2.6 Scout also allows to export unfiltered CSMs. To do so, the following arguments are required:<br/>
      &emsp;&emsp;&emsp;2.6.2.6.1 <code>./run_scout.sh -unfiltered -i scout_file -o path_to_output_file</code>.<br/>
