@@ -273,7 +273,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
      &emsp;&emsp;&emsp;2.6.1.4.1 <code>scout.exe -unfiltered -i scout_file -o path_to_output_file</code>.<br/>
      <div id="ref_2_6_1_4_1_1">&emsp;&emsp;&emsp;&emsp;2.6.1.4.1.1 <code>scout_file</code>: <i>*.scout</i> generated at the end of the process.</div>
      &emsp;&emsp;&emsp;&emsp;2.6.1.4.1.2 <code>path_to_output_file</code>: Similar to <a href="#ref_2_6_1_2_1_1_3">2.6.1.2.1.1.3</a><br/><br/>
-     &emsp;2.6.2. <b>Linux and macOS platform</b><br/>
+     <div id="ref_2_6_2">&emsp;2.6.2. <b>Linux and macOS platform</b></div>
      &emsp;&emsp;2.6.2.1 Open a Terminal and navigate to the directory where <i>Scout</i> has been uncompressed, <i>e.g., cd /home/my_user/Documents/Scout (for Linux); cd /Users/my_user/Documents/Scout</i> (for macOS).<br/>
      &emsp;&emsp;2.6.2.2 Install MPFR and GMP libraries<br/>
      &emsp;&emsp;2.6.2.2.1 Linux: <code>sudo apt install libmpfr-dev libgmp-dev</code><br/>
