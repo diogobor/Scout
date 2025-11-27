@@ -1,0 +1,223 @@
+{
+  "BDP_Mode": false,
+  "MSFileExtension": ".raw",
+  "PPMMS1Tolerance": 20.0,
+  "PPMMS2Tolerance": 20.0,
+  "PerformShotgunSearch": false,
+  "PerformCleaveXLSearch": true,
+  "SaveSpectraToResults": false,
+  "MaxQueryResults": 4,
+  "MinPepLength": 6,
+  "MaxPepLength": 60,
+  "MinPepMass": 500.0,
+  "MaxPepMass": 6000.0,
+  "FastaFile": "/path/database.fasta",
+  "RawPath": "/path/raw",
+  "OutputFolder": "/path/results",
+  "AddMinusOneIsotope": false,
+  "CarbonIsotopeShift": 1.0033548,
+  "IsotopicPossibilitiesPrecursor": 1,
+  "MiscleavageNum": 3,
+  "Enzyme": {
+    "Name": "Trypsin",
+    "CTerminus": true,
+    "Sites": "KR",
+    "BlockedBy": "P"
+  },
+  "EnzymeSpecificity": 0,
+  "MaximumVariableModsPerPeptide": 2,
+  "StaticModifications": [
+    {
+      "MassShift": 57.02146,
+      "Name": "Carbamidomethyl",
+      "IsCTerm": false,
+      "IsNTerm": false,
+      "IsVariable": false,
+      "TargetResidues": "C",
+      "ModIndex": 1
+    }
+  ],
+  "VariableModifications": [
+    {
+      "MassShift": 15.9949,
+      "Name": "Oxidation of Methionine",
+      "IsCTerm": false,
+      "IsNTerm": false,
+      "IsVariable": true,
+      "TargetResidues": "M",
+      "ModIndex": 2
+    }
+  ],
+  "ExtraAminoacids": null,
+  "SearchLoopLinks": true,
+  "IonPairMaxCharge": 2,
+  "CXLReagent": {
+    "Name": "DSSO_KSYT",
+    "LightTag": "Light",
+    "LightFragment": 54.01056468,
+    "HeavyTag": "Heavy",
+    "HeavyFragment": 85.98263585,
+    "WholeTag": "Full",
+    "WholeMass": 158.00376533,
+    "DeltaShift": 31.972071169999992,
+    "Targets": "KSYT",
+    "TargetNTerm": true
+  },
+  "FullPairsOnly": false,
+  "PairFinderPPM": 10.0,
+  "MinBinMZ": 200.0,
+  "MaxBinMZ": 1800.0,
+  "BinSize": 0.02,
+  "Offset": 0.0,
+  "ScoreFunction": 1,
+  "MS2NormalizationTypes": 2,
+  "NormalizationWindowWidth": 80.0,
+  "NormalizationWindowPeaksKept": 13,
+  "AddPrecursorToDotProduct": false,
+  "AddIonPairsToDotProduct": false,
+  "ApplyMZRangeWeighting": false,
+  "ReorderCleaveCandidateScores": true,
+  "RemoveIonPairsFromExperimentalMS": true,
+  "RemovePrecursorFromExperimentalMS": true,
+  "ReplaceNullPoissonToXLScore": true,
+  "ReorderingMethod": 0,
+  "ReorderingCombinatorialDepthHeavy": 3,
+  "ReorderingCombinatorialDepthLight": 2,
+  "FastaBatchSize": 30000,
+  "ParallelPSMs": true,
+  "QueryBatches": null,
+  "MergeDatabase": true,
+  "MethionineInitiator": true,
+  "AddDecoys": true,
+  "AddContaminants": true,
+  "DontShowContaminants": true,
+  "DecoyTag": "Reverse",
+  "DecoyGenerationMode": 0,
+  "AddUnlabelledDecoys": false,
+  "UnlabelledDecoyTag": "Unlabelled",
+  "OffsetUnlabelledDecoy": true,
+  "OffsetUnlabelled": 2,
+  "UnlabelledDecoysGenerationMode": 4,
+  "AddLocusStringToPeptides": true,
+  "DeconvolutionForPairSearching": true,
+  "DeconvolutionForMSScoring": false,
+  "SilacSearch": false,
+  "SilacHybridMode": false,
+  "SilacGroups": [
+    {
+      "GroupName": "Light",
+      "GroupAminoacids": [
+        {
+          "TargetResidue": "K",
+          "MassShift": 0.0
+        },
+        {
+          "TargetResidue": "R",
+          "MassShift": 0.0
+        }
+      ]
+    },
+    {
+      "GroupName": "Heavy",
+      "GroupAminoacids": [
+        {
+          "TargetResidue": "K",
+          "MassShift": 8.0141988131999
+        },
+        {
+          "TargetResidue": "R",
+          "MassShift": 10.0082685996
+        }
+      ]
+    }
+  ],
+  "SilacSearchNormalPeptides": false,
+  "IsobaricLabelling_Search": false,
+  "IsobaricLabelling_Mods": [
+    {
+      "MassShift": 144.1,
+      "Name": "iTRAQ - 4",
+      "IsCTerm": false,
+      "IsNTerm": true,
+      "IsVariable": false,
+      "TargetResidues": "K",
+      "ModIndex": 8
+    },
+    {
+      "MassShift": 304.2022,
+      "Name": "iTRAQ - 8",
+      "IsCTerm": false,
+      "IsNTerm": true,
+      "IsVariable": false,
+      "TargetResidues": "K",
+      "ModIndex": 7
+    },
+    {
+      "MassShift": 229.1629321141,
+      "Name": "TMT - 6plex",
+      "IsCTerm": false,
+      "IsNTerm": true,
+      "IsVariable": false,
+      "TargetResidues": "K",
+      "ModIndex": 9
+    },
+    {
+      "MassShift": 229.1629321141,
+      "Name": "TMT - 10plex",
+      "IsCTerm": false,
+      "IsNTerm": true,
+      "IsVariable": false,
+      "TargetResidues": "K",
+      "ModIndex": 10
+    },
+    {
+      "MassShift": 229.1629321141,
+      "Name": "TMT - 11plex",
+      "IsCTerm": false,
+      "IsNTerm": true,
+      "IsVariable": false,
+      "TargetResidues": "K",
+      "ModIndex": 11
+    },
+    {
+      "MassShift": 304.207146,
+      "Name": "TMT - 16plex (TMTpro)",
+      "IsCTerm": false,
+      "IsNTerm": true,
+      "IsVariable": false,
+      "TargetResidues": "K",
+      "ModIndex": 12
+    },
+    {
+      "MassShift": 304.207146,
+      "Name": "TMT - 18plex (TMTpro)",
+      "IsCTerm": false,
+      "IsNTerm": true,
+      "IsVariable": false,
+      "TargetResidues": "K",
+      "ModIndex": 13
+    }
+  ],
+  "SelectedIsobaricLabelling_Mod": {
+    "MassShift": 304.207146,
+    "Name": "TMT - 16plex (TMTpro)",
+    "IsCTerm": false,
+    "IsNTerm": true,
+    "IsVariable": false,
+    "TargetResidues": "K",
+    "ModIndex": 12
+  },
+  "IsobaricLabelling_AllowedFreeResidues": 2,
+  "CalculatePairIntensities": true,
+  "AddXLasVariableMod": false,
+  "IsotopesInTheoreticalMS": 2,
+  "MaxChargeInTheoreticalMS": 2,
+  "BonusMode": true,
+  "BonusScore": 0.001,
+  "ApplyNeutralLossH2O": false,
+  "ApplyNeutralLossNH3": false,
+  "StarIntensity": 0.7,
+  "FastaDistinctByLocus": true,
+  "ApplyQuantileIntensityThreshold": false,
+  "QuantileIntensityThreshold": 0.3
+}
