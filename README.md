@@ -12,9 +12,9 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
 
 ## Software
 -	Windows 10 (64 bits) or later; macOS 15.7.2 (64 bits) or later; Linux (64 bits)
--	Python 3.12 or later.
--	.NET Core 9 or later.
--	MPFR and GMP
+-	[Python 3.12 or later](https://www.python.org/downloads/).
+-	[.NET Core 9 or later](https://dotnet.microsoft.com/en-us/download).
+-	[MPFR and GMP (for Linux or macOS)](https://github.com/diogobor/Scout#ref_2_6_2_2)
 -	Scout software, available for download at https://github.com/diogobor/Scout/releases
 
 ## Data files
@@ -275,7 +275,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
      &emsp;&emsp;&emsp;&emsp;2.6.1.4.1.2 <code>path_to_output_file</code>: Similar to <a href="#ref_2_6_1_2_1_1_3">2.6.1.2.1.1.3</a><br/><br/>
      <div id="ref_2_6_2">&emsp;2.6.2. <b>Linux and macOS platform</b></div>
      &emsp;&emsp;2.6.2.1 Open a Terminal and navigate to the directory where <i>Scout</i> has been uncompressed, <i>e.g., cd /home/my_user/Documents/Scout (for Linux); cd /Users/my_user/Documents/Scout</i> (for macOS).<br/>
-     &emsp;&emsp;2.6.2.2 Install MPFR and GMP libraries<br/>
+     <div id="ref_2_6_2_2">&emsp;&emsp;2.6.2.2 Install MPFR and GMP libraries</div>
      &emsp;&emsp;2.6.2.2.1 Linux: <code>sudo apt install libmpfr-dev libgmp-dev</code><br/>
      &emsp;&emsp;&emsp;2.6.2.2.1.1 Check where the libraries have been installed: <code>whereis libmpfr.so</code><br/>
      &emsp;&emsp;&emsp;2.6.2.2.1.2 If the path is not one of these:<br/>
