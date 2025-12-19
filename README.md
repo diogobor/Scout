@@ -320,3 +320,32 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
 <div id="lib_3">[3]	D. B. Lima, Y. Zhu, and F. Liu, “XlinkCyNET: A Cytoscape Application for Visualization of Protein Interaction Networks Based on Cross-Linking Mass Spectrometry Identifications,” J. Proteome Res., vol. 20, no. 4, pp. 1943–1950, Apr. 2021, doi: <a href="https://doi.org/10.1021/acs.jproteome.0c00957" target="_blank">10.1021/acs.jproteome.0c00957</a>.</div>
 <div id="lib_4">[4]	P. Shannon et al., “Cytoscape: A Software Environment for Integrated Models of Biomolecular Interaction Networks,” Genome Res., vol. 13, no. 11, pp. 2498–2504, Nov. 2003, doi: <a href="https://doi.org/10.1101/gr.1239303" target="_blank">10.1101/gr.1239303</a>.</div>
 <div id="lib_5">[5]	M. A. Clasen et al., “Increasing confidence in proteomic spectral deconvolution through mass defect,” Bioinformatics, vol. 38, no. 22, pp. 5119–5120, Nov. 2022, doi: <a href="https://doi.org/10.1093/bioinformatics/btac638" target="_blank">10.1093/bioinformatics/btac638</a>.</div>
+
+# Troubleshooting
+<p>Some common issues and their suggested fixes are listed below.</p>
+<hr/>
+<div><b>Problem:</b> <code>ERROR: It's not possible to set up Python. ERROR: Could not update pip.</code><br/>
+<b>Cause:</b> Your user account does not have sufficient permissions to update or install Python.<br/>
+<b>Solution:</b><br/>
+<ul>
+  <li>Start <i>Scout</i> with administrator privileges (or use a user account with installation permissions) for the first time.</li>
+  <li>This will allow Scout to update pip and modify the system PATH variables if necessary.</li>
+</ul>
+
+<hr/>
+<div><b>Problem:</b> <code>ERROR: It's not possible to set up Python.</code><br/><code>An error occurred trying to start process 'C:\Program Files\WindowsApps\...\python.exe' with working directory 'C:\Program Files\Scout\'. Access is denied.</code><br/>
+<b>Cause:</b> Likely Python was installed via Windows Store. Windows Store apps live under WindowsApps, which has restricted Access Control Lists. Even if you are admin, Process.Start cannot execute it directly → Access is denied.<br/>
+<b>Solution:</b><br/>
+<ul>
+  <li>Uninstall all Python versions installed via Windows Store and install a new version via <a href="https://www.python.org/downloads/" target="_blank">python.org</a> or download <a href="https://www.anaconda.com/" target="_blank">Anaconda</a> and create a dedicated virtual Python environment.</li>
+</ul>
+
+<hr/>
+<div><b>Problem:</b> in CLI version, <i>Search/Filter does not start</i><br/>
+<b>Cause:</b> Duplicate parameters are present in the JSON files.<br/>
+<b>Solution:</b><br/>
+<ul>
+  <li>Check which parameters are duplicated and delete them. Ensure that the parameters described in sections <a href="#ref_2_6_1_2_1_1">2.6.1.2.1.1 (search)</a> and <a href="#ref_2_6_1_2_1_2">2.6.1.2.1.2 (filter)</a> are present once.</li>
+</ul>
+
+</div>
