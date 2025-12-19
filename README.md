@@ -306,11 +306,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
      &emsp;&emsp;2.6.2.6 Scout also allows to export unfiltered CSMs. To do so, the following arguments are required:<br/>
      &emsp;&emsp;&emsp;2.6.2.6.1 <code>./run_scout.sh -unfiltered -i scout_file -o path_to_output_file</code>.<br/>
      &emsp;&emsp;&emsp;2.6.2.6.2 Instructions similar to <a href="#ref_2_6_1_4_1_1">2.6.1.4.1.1</a>.<br/></br>
-     &emsp;2.6.4 Troubleshooting<br/>
-     &emsp;&emsp;2.6.4.1 <i>Search/Filter does not start</i>: Check the above mentioned parameters <b>are not duplicated</b> in the json files.<br/>
-     &emsp;&emsp;2.6.4.2 <i>Terminal opens and closes quickly</i>: Make sure Python is installed on your machine. Check 2.6.4.1.<br/>
-     &emsp;&emsp;2.6.4.3 <i>Log file is saved in the root path of the partition</i>: <i>OutputFolder</i> parameter in <code>search_params_file.json</code> is null or duplicated in the file.
-
+     
 # Closing remarks
   <p>&emsp;&emsp;In conclusion, Scout is a powerful tool for identifying protein-protein interactions using cleavable cross-linkers in proteomic datasets. Its user-friendly interface, customizable search and post-processing parameters, and multiple filtering options make it a versatile tool for protein interaction analysis. Scout can be particularly useful for studying complex biological systems when identifying protein-protein interactions is crucial for understanding their function.  Overall, Scout provides a valuable resource for researchers interested in studying protein-protein interactions at a large scale.</p>
 
@@ -341,11 +337,27 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
 </ul>
 
 <hr/>
-<div><b>Problem:</b> in CLI version, <i>Search/Filter does not start</i><br/>
+<div><b>Problem:</b> <u>in CLI version</u>, <i>Search/Filter does not start</i><br/>
 <b>Cause:</b> Duplicate parameters are present in the JSON files.<br/>
 <b>Solution:</b><br/>
 <ul>
   <li>Check which parameters are duplicated and delete them. Ensure that the parameters described in sections <a href="#ref_2_6_1_2_1_1">2.6.1.2.1.1 (search)</a> and <a href="#ref_2_6_1_2_1_2">2.6.1.2.1.2 (filter)</a> are present once.</li>
+</ul>
+
+<hr/>
+<div><b>Problem:</b> <u>in CLI version</u>, <i>Terminal opens and closes quickly</i><br/>
+<b>Cause:</b> Python is not installed.<br/>
+<b>Solution:</b><br/>
+<ul>
+  <li>Ensure Python is installed on your machine.</li>
+</ul>
+
+<hr/>
+<div><b>Problem:</b> <u>in CLI version</u>, <i>Log file is saved in the root path of the partition</i><br/>
+<b>Cause:</b> <i>OutputFolder</i> parameter in <code>search_params_file.json</code> is null or duplicated in the file.<br/>
+<b>Solution:</b><br/>
+<ul>
+  <li>Make sure that the <i>OutputFolder</i> is only set up once in the <code>search_params_file.json</code> file.</li>
 </ul>
 
 </div>
