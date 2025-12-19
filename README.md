@@ -337,7 +337,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
 </ul>
 
 <hr/>
-<div><b>Problem:</b> <u>in CLI version</u>, <i>Search/Filter does not start</i><br/>
+<div><b>Problem:</b> <ins>in CLI version</ins>, <i>Search/Filter does not start</i>.<br/>
 <b>Cause:</b> Duplicate parameters are present in the JSON files.<br/>
 <b>Solution:</b><br/>
 <ul>
@@ -345,7 +345,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
 </ul>
 
 <hr/>
-<div><b>Problem:</b> <u>in CLI version</u>, <i>Terminal opens and closes quickly</i><br/>
+<div><b>Problem:</b> <ins>in CLI version</ins>, <i>Terminal opens and closes quickly</i>.<br/>
 <b>Cause:</b> Python is not installed.<br/>
 <b>Solution:</b><br/>
 <ul>
@@ -353,7 +353,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
 </ul>
 
 <hr/>
-<div><b>Problem:</b> <u>in CLI version</u>, <i>Log file is saved in the root path of the partition</i><br/>
+<div><b>Problem:</b> <ins>in CLI version</ins>, <i>Log file is saved in the root path of the partition</i>.<br/>
 <b>Cause:</b> <i>OutputFolder</i> parameter in <code>search_params_file.json</code> is null or duplicated in the file.<br/>
 <b>Solution:</b><br/>
 <ul>
