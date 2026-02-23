@@ -280,7 +280,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
      &emsp;&emsp;&emsp;2.6.1.5.1 <code>scout.exe -mzid -v <1.2 or 1.3> -i scout_file -raws path_raw_files -o mzid_output_file</code>.<br/>
      &emsp;&emsp;&emsp;&emsp;2.6.1.5.1.1 <code>-v <1.2 or 1.3></code>: define the mzIdentML version desired to be saved.<br/>
      <div id="ref_2_6_1_5_1_2">&emsp;&emsp;&emsp;&emsp;2.6.1.5.1.2 <code>scout_file</code>: <i>*.scout</i> generated at the end of the process.</div>
-       &emsp;&emsp;&emsp;&emsp;2.6.1.5.1.3 <code>path_raw_files</code>: Define a folder where the RAW files are. 
+       &emsp;&emsp;&emsp;&emsp;2.6.1.5.1.3 <code>path_raw_files</code>: Define a folder where the RAW files are.<br/>
        &emsp;&emsp;&emsp;&emsp;2.6.1.5.1.4 <code>mzid_output_file</code>: Define the file name with full path, e.g., C:\\my_search\\my_mzid_file.mzid (for Windows); /home/my_user/Documents/my_mzid_file.mzid (for Linux); /Users/my_user/Documents/my_mzid_file.mzid (for macOS).<br/>
        &emsp;&emsp;&emsp;&emsp; <i>PS: Besides the mzIdentML file, a *-specID.ms2 file will also be saved, which holds all the identified MS/MS spectra. Both files are required to proceed with the 'Complete Submission' in the PRIDE[<a href="#lib_1">1</a>] system.</i> <br/><br/>
      <div id="ref_2_6_2">&emsp;2.6.2. <b>Linux and macOS platform</b></div>
