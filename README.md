@@ -273,9 +273,15 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
      &emsp;&emsp;&emsp;&emsp;&#8658; <b><i>Once the filter starts, a log file is generated in the output folder.</i></b><br/><br/>
      &emsp;&emsp;&emsp;&emsp;&#8658; <i>In the end, four files will be generated: filtered_csms.csv, filtered_looplinks.csv, filtered_residue_pairs.csv and filtered_ppis.csv.</i><br/><br/>
      &emsp;&emsp;2.6.1.4 Scout also allows to export unfiltered CSMs. To do so, the following arguments are required:<br/>
-     &emsp;&emsp;&emsp;2.6.1.4.1 <code>scout.exe -unfiltered -i scout_file -o path_to_output_file</code>.<br/>
-     <div id="ref_2_6_1_4_1_1">&emsp;&emsp;&emsp;&emsp;2.6.1.4.1.1 <code>scout_file</code>: <i>*.scout</i> generated at the end of the process.</div>
+     <div id="ref_2_6_1_4_1">&emsp;&emsp;&emsp;2.6.1.4.1 <code>scout.exe -unfiltered -i scout_file -o path_to_output_file</code>.</div>
+     &emsp;&emsp;&emsp;&emsp;2.6.1.4.1.1 <code>scout_file</code>: <i>*.scout</i> generated at the end of the process.<br/>
      &emsp;&emsp;&emsp;&emsp;2.6.1.4.1.2 <code>path_to_output_file</code>: Similar to <a href="#ref_2_6_1_2_1_1_3">2.6.1.2.1.1.3</a><br/><br/>
+     <div id="ref_2_6_1_5_1">&emsp;&emsp;2.6.1.5 Scout is able to save results in mzIdentML 1.2 or 1.3 version. To do so, the following arguments are required:</div>
+     &emsp;&emsp;&emsp;2.6.1.5.1 <code>scout.exe -mzid -v <1.2 or 1.3> -i scout_file -o mzid_output_file</code>.<br/>
+     &emsp;&emsp;&emsp;&emsp;2.6.1.5.1.1 <code>-v <1.2 or 1.3></code>: define the mzIdentML version desired to be saved.<br/>
+     <div id="ref_2_6_1_5_1_2">&emsp;&emsp;&emsp;&emsp;2.6.1.5.1.2 <code>scout_file</code>: <i>*.scout</i> generated at the end of the process.</div>
+       &emsp;&emsp;&emsp;&emsp;2.6.1.5.1.3 <code>mzid_output_file</code>: Define the file name with full path, e.g., C:\\my_search\\my_mzid_file.mzid (for Windows); /home/my_user/Documents/my_mzid_file.mzid (for Linux); /Users/my_user/Documents/my_mzid_file.mzid (for macOS).<br/>
+       &emsp;&emsp;&emsp;&emsp; <i>PS: Besides the mzIdentML file, a *-specID.ms2 file will also be saved, which holds all the identified MS/MS spectra. Both files are required to proceed with the 'Complete Submission' in the PRIDE[<a href="#lib_1">1</a>] system.</i> <br/><br/>
      <div id="ref_2_6_2">&emsp;2.6.2. <b>Linux and macOS platform</b></div>
      &emsp;&emsp;2.6.2.1 Open a Terminal and navigate to the directory where <i>Scout</i> has been uncompressed, <i>e.g., cd /home/my_user/Documents/Scout (for Linux); cd /Users/my_user/Documents/Scout</i> (for macOS).<br/>
      <div id="ref_2_6_2_2">&emsp;&emsp;2.6.2.2 Install MPFR and GMP libraries</div>
@@ -305,7 +311,10 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
      &emsp;&emsp;&emsp;&#8658; <i>In the end, four files will be generated: filtered_csms.csv, filtered_looplinks.csv, filtered_residue_pairs.csv and filtered_ppis.csv.</i><br/><br/>
      &emsp;&emsp;2.6.2.6 Scout also allows to export unfiltered CSMs. To do so, the following arguments are required:<br/>
      &emsp;&emsp;&emsp;2.6.2.6.1 <code>./run_scout.sh -unfiltered -i scout_file -o path_to_output_file</code>.<br/>
-     &emsp;&emsp;&emsp;2.6.2.6.2 Instructions similar to <a href="#ref_2_6_1_4_1_1">2.6.1.4.1.1</a>.<br/></br>
+     &emsp;&emsp;&emsp;2.6.2.6.2 Instructions similar to <a href="#ref_2_6_1_4_1">2.6.1.4.1</a>.<br/></br>
+     &emsp;&emsp;2.6.2.7 Scout is able to save results in mzIdentML 1.2 or 1.3 version. To do so, the following arguments are required:<br/>
+     &emsp;&emsp;&emsp;2.6.2.7.1 <code>./run_scout.sh -mzid -v <1.2 or 1.3> -i scout_file -o mzid_output_file</code>.<br/>
+     &emsp;&emsp;&emsp;2.6.2.7.2 Instructions similar to <a href="#ref_2_6_1_5_1">2.6.1.5.1</a>.<br/></br>
      
 # Closing remarks
   <p>&emsp;&emsp;In conclusion, Scout is a powerful tool for identifying protein-protein interactions using cleavable cross-linkers in proteomic datasets. Its user-friendly interface, customizable search and post-processing parameters, and multiple filtering options make it a versatile tool for protein interaction analysis. Scout can be particularly useful for studying complex biological systems when identifying protein-protein interactions is crucial for understanding their function.  Overall, Scout provides a valuable resource for researchers interested in studying protein-protein interactions at a large scale.</p>
