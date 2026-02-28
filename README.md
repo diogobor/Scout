@@ -273,7 +273,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
      &emsp;&emsp;&emsp;&emsp;&#8658; <b><i>Once the filter starts, a log file is generated in the output folder.</i></b><br/><br/>
      &emsp;&emsp;&emsp;&emsp;&#8658; <i>In the end, four files will be generated: filtered_csms.csv, filtered_looplinks.csv, filtered_residue_pairs.csv and filtered_ppis.csv.</i><br/><br/>
      &emsp;&emsp;2.6.1.4 Scout also allows to export unfiltered CSMs. To do so, the following arguments are required:<br/>
-     <div id="ref_2_6_1_4_1">&emsp;&emsp;&emsp;2.6.1.4.1 <code>scout.exe -unfiltered -i scout_file -o path_to_output_file</code>.</div>
+     <div id="ref_2_6_1_4_1">&emsp;&emsp;&emsp;2.6.1.4.1 <code>scout.exe -unfiltered_csm -i scout_file -o path_to_output_file</code>.</div>
      &emsp;&emsp;&emsp;&emsp;2.6.1.4.1.1 <code>scout_file</code>: <i>*.scout</i> generated at the end of the process.<br/>
      &emsp;&emsp;&emsp;&emsp;2.6.1.4.1.2 <code>path_to_output_file</code>: Similar to <a href="#ref_2_6_1_2_1_1_3">2.6.1.2.1.1.3</a><br/><br/>
      <div id="ref_2_6_1_5_1">&emsp;&emsp;2.6.1.5 Scout is able to save results in mzIdentML 1.2 or 1.3 version. To do so, the following arguments are required:</div>
@@ -311,7 +311,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
      &emsp;&emsp;&emsp;&#8658; <b><i>Once the filter starts, a log file is generated in the output folder.</i></b><br/><br/>
      &emsp;&emsp;&emsp;&#8658; <i>In the end, four files will be generated: filtered_csms.csv, filtered_looplinks.csv, filtered_residue_pairs.csv and filtered_ppis.csv.</i><br/><br/>
      &emsp;&emsp;2.6.2.6 Scout also allows to export unfiltered CSMs. To do so, the following arguments are required:<br/>
-     &emsp;&emsp;&emsp;2.6.2.6.1 <code>./run_scout.sh -unfiltered -i scout_file -o path_to_output_file</code>.<br/>
+     &emsp;&emsp;&emsp;2.6.2.6.1 <code>./run_scout.sh -unfiltered_csm -i scout_file -o path_to_output_file</code>.<br/>
      &emsp;&emsp;&emsp;2.6.2.6.2 Instructions similar to <a href="#ref_2_6_1_4_1">2.6.1.4.1</a>.<br/></br>
      &emsp;&emsp;2.6.2.7 Scout is able to save results in mzIdentML 1.2 or 1.3 version. To do so, the following arguments are required:<br/>
      &emsp;&emsp;&emsp;2.6.2.7.1 <code>./run_scout.sh -mzid -v <1.2 or 1.3> -i scout_file -raws path_raw_files -o mzid_output_file</code>.<br/>
