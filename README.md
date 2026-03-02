@@ -285,29 +285,30 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
      &emsp;&emsp;2.6.1.1 To do so, open a Terminal (press Win+R, type <i>cmd</i> and press enter).<br/>
      &emsp;&emsp;&emsp;2.6.1.1.1 Navigate to the directory where <i>Scout</i> has been installed, <i>e.g.</i>, cd C:\\Program Files\\Scout.<br/>
      &emsp;&emsp;2.6.1.2 To start a search, the following arguments are required:<br/>
-     &emsp;&emsp;&emsp;2.6.1.2.1 <code>scout.exe -search search_params_file.json filter_params_file.json</code>.<br/>
-     <div id="ref_2_6_1_2_1_1">&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.2.1.1 In <code>search_params_file.json</code>, the following parameters must be filled:</div>
-     <div id="ref_2_6_1_2_1_1_1">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.2.1.1.1 <b><i>FastaFile</i></b>: The database file needs to be defined with its directory, <i>e.g., C:\\my_search\\my_db.fasta (for Windows); /home/my_user/Documents/my_db.fasta (for Linux); /Users/my_user/Documents/my_db.fasta (for macOS)</i>.</div>
-     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.2.1.1.2 <b><i>RawPath</i></b>: The raw file(s) need(s) to be defined with its directory, <i>e.g., C:\\my_search\\my_raw_file.raw (for Windows); /home/my_user/Documents/my_raw_file.raw (for Linux); /Users/my_user/Documents/my_raw_file.raw (for macOS)</i>. Multiple raw files must be separeted with ';', <i>e.g., C:\\my_search\\my_raw_file_1.raw;C:\\my_search\\my_raw_file_2.raw;C:\\my_search\\my_raw_file_3.raw</i>. A folder where the raw files are can be defined instead of raw file(s). In this case, define only the directory, <i>e.g., C:\\my_search (for Windows); /home/my_user/Documents/scout_results (for Linux); /Users/my_user/Documents/scout_results (for macOS)</i>.<br/>
-     <div id="ref_2_6_1_2_1_1_3">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.2.1.1.3 <b><i>OutputFolder</i></b>: Define a folder where the results will be saved, <i>e.g., C:\my_search\results</i>.</div>
+     &emsp;&emsp;&emsp;2.6.1.2.1 <code>scout.exe -search <? -no_filter> search_params_file.json filter_params_file.json</code>.<br/>
+     <div id="ref_2_6_1_2_1_1">&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.2.1.1 <code>-no_filter</code>: (<i>optional</i>) set it if you only want to search.</div>
+     &emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.2.1.2 In <code>search_params_file.json</code>, the following parameters must be filled:
+     <div id="ref_2_6_1_2_1_1_1">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.2.1.2.1 <b><i>FastaFile</i></b>: The database file needs to be defined with its directory, <i>e.g., C:\\my_search\\my_db.fasta (for Windows); /home/my_user/Documents/my_db.fasta (for Linux); /Users/my_user/Documents/my_db.fasta (for macOS)</i>.</div>
+     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.2.1.2.2 <b><i>RawPath</i></b>: The raw file(s) need(s) to be defined with its directory, <i>e.g., C:\\my_search\\my_raw_file.raw (for Windows); /home/my_user/Documents/my_raw_file.raw (for Linux); /Users/my_user/Documents/my_raw_file.raw (for macOS)</i>. Multiple raw files must be separeted with ';', <i>e.g., C:\\my_search\\my_raw_file_1.raw;C:\\my_search\\my_raw_file_2.raw;C:\\my_search\\my_raw_file_3.raw</i>. A folder where the raw files are can be defined instead of raw file(s). In this case, define only the directory, <i>e.g., C:\\my_search (for Windows); /home/my_user/Documents/scout_results (for Linux); /Users/my_user/Documents/scout_results (for macOS)</i>.<br/>
+     <div id="ref_2_6_1_2_1_1_3">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.2.1.2.3 <b><i>OutputFolder</i></b>: Define a folder where the results will be saved, <i>e.g., C:\my_search\results</i>.</div>
      &emsp;&emsp;&emsp;&emsp;&emsp;&#8658; The <code>search_params_file.json</code> can be generated according to <a href="#ref_2_2_5_17">2.2.5.17</a>.<br/>
-     <div id="ref_2_6_1_2_1_2">&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.2.1.2 In <code>filter_params_file.json</code>, the following parameters must be filled:</div>
-     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.2.1.2.1 <b><i>CSM_FDR</i>, <i>ResPair_FDR</i>, <i>PPI_FDR</i></b>: The FDR values need to be defined with a value between 0 and 1.<br/>
+     <div id="ref_2_6_1_2_1_2">&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.2.1.3 In <code>filter_params_file.json</code>, the following parameters must be filled:</div>
+     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.2.1.3.1 <b><i>CSM_FDR</i>, <i>ResPair_FDR</i>, <i>PPI_FDR</i></b>: The FDR values need to be defined with a value between 0 and 1.<br/>
      &emsp;&emsp;&emsp;&emsp;&emsp;&#8658; The <code>filter_params_file.json</code> can be generated according to <a href="#ref_2_2_6_7">2.2.6.7</a>.<br/><br/>
      &emsp;&emsp;&emsp;&emsp;&emsp;&#8658; <b><i>Once the search starts, a log file is generated in the output folder.</i></b><br/><br/>
      &emsp;&emsp;&emsp;&emsp;&emsp;&#8658; <i>In the end, four files will be generated: filtered_csms.csv, filtered_looplinks.csv, filtered_residue_pairs.csv and filtered_ppis.csv.</i><br/><br/>
      &emsp;&emsp;2.6.1.3 To filter only the results, the following arguments are required:<br/>
      &emsp;&emsp;&emsp;2.6.1.3.1 <code>scout.exe -filter filter_params_file -fasta fasta_file -i path_search_result_files -o path_to_output_files</code>.<br/>
-     <div id="ref_2_6_1_3_1_1">&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.3.1.1 <code>filter_params_file.json</code>: Similar to <a href="#ref_2_6_1_2_1_2">2.6.1.2.1.2</a></div>
-     &emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.3.1.2 <code>fasta_file</code>: Similar to <a href="#ref_2_6_1_2_1_1_1">2.6.1.2.1.1.1</a><br/>
+     <div id="ref_2_6_1_3_1_1">&emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.3.1.1 <code>filter_params_file.json</code>: Similar to <a href="#ref_2_6_1_2_1_2">2.6.1.2.1.3</a></div>
+     &emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.3.1.2 <code>fasta_file</code>: Similar to <a href="#ref_2_6_1_2_1_1_1">2.6.1.2.1.2.1</a><br/>
      &emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.3.1.3 <code>path_search_result_files</code>: Define a directory where the search resuts files (*.buf) are.<br/>
-     &emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.3.1.4 <code>path_to_output_files</code>: Similar to <a href="#ref_2_6_1_2_1_1_3">2.6.1.2.1.1.3</a><br/><br/>
+     &emsp;&emsp;&emsp;&emsp;&emsp;2.6.1.3.1.4 <code>path_to_output_files</code>: Similar to <a href="#ref_2_6_1_2_1_1_3">2.6.1.2.1.2.3</a><br/><br/>
      &emsp;&emsp;&emsp;&emsp;&#8658; <b><i>Once the filter starts, a log file is generated in the output folder.</i></b><br/><br/>
      &emsp;&emsp;&emsp;&emsp;&#8658; <i>In the end, four files will be generated: filtered_csms.csv, filtered_looplinks.csv, filtered_residue_pairs.csv and filtered_ppis.csv.</i><br/><br/>
      &emsp;&emsp;2.6.1.4 Scout also allows to export unfiltered CSMs. To do so, the following arguments are required:<br/>
      <div id="ref_2_6_1_4_1">&emsp;&emsp;&emsp;2.6.1.4.1 <code>scout.exe -unfiltered_csm -i scout_file -o path_to_output_file</code>.</div>
      &emsp;&emsp;&emsp;&emsp;2.6.1.4.1.1 <code>scout_file</code>: <i>*.scout</i> generated at the end of the process.<br/>
-     &emsp;&emsp;&emsp;&emsp;2.6.1.4.1.2 <code>path_to_output_file</code>: Similar to <a href="#ref_2_6_1_2_1_1_3">2.6.1.2.1.1.3</a><br/><br/>
+     &emsp;&emsp;&emsp;&emsp;2.6.1.4.1.2 <code>path_to_output_file</code>: Similar to <a href="#ref_2_6_1_2_1_1_3">2.6.1.2.1.2.3</a><br/><br/>
      <div id="ref_2_6_1_5_1">&emsp;&emsp;2.6.1.5 Scout is able to save results in mzIdentML 1.2 or 1.3 version. To do so, the following arguments are required:</div>
      &emsp;&emsp;&emsp;2.6.1.5.1 <code>scout.exe -mzid -v <1.2 or 1.3> -i scout_file -raws path_raw_files -o mzid_output_file</code>.<br/>
      &emsp;&emsp;&emsp;&emsp;2.6.1.5.1.1 <code>-v <1.2 or 1.3></code>: define the mzIdentML version desired to be saved.<br/>
