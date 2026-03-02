@@ -422,4 +422,13 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
 
 <hr/>
 
+<div><b>Problem:</b> <ins>2D Map</ins>, <i>The links are not coordinated.</i><br/>
+<b>Cause:</b> The resolution scale is probably not set to 100%.<br/>
+<b>Solution:</b><br/>
+<ul>
+  <li>(Win) Go to Settings &rarr; System &rarr; Display &rarr; Scale <i>(Change the size of text, apps, and other items)</i>; set to 100% (Recommended).
+    <p align="center"><img width="55%" alt="image" src="https://github.com/user-attachments/assets/61896de6-5c4d-47c7-ad24-fed4fef1841f"></p>  </li>
+</ul>
+<hr/>
+
 </div>
