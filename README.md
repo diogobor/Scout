@@ -85,7 +85,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
 &emsp;&emsp;&emsp;&emsp;2.2.5.12.1. <i>Add Reagent</i>: Go to XL Reagents tab and click on ‘<i>Add Reagent</i>’ button (<b>Figure 4a</b>). A new window will be opened (<b>Figure 4b</b>).<br/>
       <p align="center"><img width="35%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/b04ab7b4-6066-47b1-8e2c-dabb1eb326cc"><br/>
       <b>Figure 4a: Chemical cross-linkers window: on this tab, new reagents can be added or removed.</b><br/><br/>
-      <img width="35%" alt="image" src="https://github.com/user-attachments/assets/3e2ffe0d-5d84-40ce-b3c5-3c6640f37eee"><br/>
+      <img width="35%" alt="image" src="https://github.com/user-attachments/assets/eb3e0d50-b4f5-47e1-a5ba-6cff320d6f38"><br/>
       <b>Figure 4b: A new reagent can be added into the list of cross-linkers.</b>
       </p>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.5.12.1.1. <i>Name</i>: Specify a unique identifier for the new cleavable reagent.<br/>
@@ -93,8 +93,9 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.5.12.1.3. <i>Heavy Fragment Mass</i>: Specify the heavy fragment mass in Daltons.<br/>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.5.12.1.4. <i>Full Mass</i>: Specify the full mass of the reagent in Daltons.<br/>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.5.12.1.5. <i>Ion Pair Shift</i>: The pair will be automatically calculated according to the light and heavy fragment masses.<br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.5.12.1.6. <i>Target Residues</i>: Specify the target residues that the new cleavable cross-linker will react with. <i>PS: List residues without spaces; for example, use KSYT for DSSO.</i><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.5.12.1.7. <i>N-Terminal</i>: Check this option if the new cleavable cross-linker also reacts at the N-terminus of the protein. <br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.5.12.1.6. <i>α Target Residues</i>: Specify the α target residues that the new cleavable cross-linker will react with. <i>PS: List residues without spaces; for example, use KSYT for DSSO.</i><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.5.12.1.7. <i>β Target Residues</i>: Specify the β target residues that the new cleavable cross-linker will react with. <i>PS: List residues without spaces; for example, use KSYT for DSSO.</i><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.2.5.12.1.8. <i>N-Terminal</i>: Check this option if the new cleavable cross-linker also reacts at the N-terminus of the protein. <br/>
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Click the ‘<i>Confirm</i>’ button to incorporate the new cleavable reagent into the XL Reagents table. Subsequently, return to <i><a href="#ref_2_2_5_10">2.2.5.10</a></i>.<br/>
       &emsp;&emsp;&emsp;&emsp;2.2.5.12.2 To remove an XL Reagent, press ‘<i>Del</i>’ key. A confirmation message will be displayed. Confirm it to proceed.<br/><br/>
       &emsp;&emsp;2.2.5.13. <i>Deconvolute for Ion Pair Searching</i>: Check this option to deconvolute the spectra before searching the ion pairs. If enabled, the deconvolution will be performed by YADA 3.0 [<a href="#lib_5">5</a>].<br/>
