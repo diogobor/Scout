@@ -404,10 +404,10 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
 <hr/>
   
 <div><b>Problem:</b> <ins>2D Map</ins>, <i>There is no protein to visualize! Reset the filters!</i><br/>
-<b>Cause:</b> Likely the CSMs score are lower than the cutoff.<br/>
+<b>Cause:</b> The CSM score is probably below the cutoff point.<br/>
 <b>Solution:</b><br/>
 <ul>
-  <li>Put 0.0 in <i>Score</i> field and press ENTER (or click on <i>Filter</i> button).</li>
+  <li>Set 0.0 in <i>Score</i> field and press ENTER (or click on <i>Filter</i> button).</li>
 </ul>
 
 <hr/>
