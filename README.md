@@ -205,37 +205,42 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
       <b>Figure 12e: List of Residue Pairs from a specific PPI.</b>
       </p>
       &emsp;2.3.1 <b>Filter results</b>: Results contain FDR filtered identifications on all levels – in the graphical user interface, personal filters can be applied:</br>
-      &emsp;&emsp;2.3.1.1. <b><i>CSM level</i></b>: In this tab (<b>Figure 11</b>), the CSMs are displayed according to the specified filter parameters.</br>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.1.1 <i>Scan</i>: Specify the scan number to be displayed.</br>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.1.2 <i>Score</i>: Specify the score cutoff. All CSMs with a score greater than ‘<i>Score</i>’ will be displayed.</br>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.1.3 <i>Search</i>: Type the &alpha; or/and &beta; peptide (separated by <i>'-'</i>) as well as the protein 1 or/and protein 2 (separated by <i>'-'</i>), or even gene 1 or/and gene 2 (separated by <i>'-'</i>) to be displayed. <i>PS: Type at least four characters</i>.</br>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.1.4 <i>Files</i>: Select the file(s) that the results to be displayed belong to. If no files or ‘<i>All files</i>’ is selected, all results will be displayed.</br>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.1.5 <i>Show inter-protein links only</i>: Check this option to display only the CSMs that belong to inter-protein interactions.</br>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.1.6 <i>Show decoys</i>: Check this option to display decoy identifications.</br>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.1.7 Click on ‘<i>Filter</i>’ button or press <i>Enter</i> to perform the filter.</br>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.1.8 Click on ‘<i>Reset</i>’ button to restore default result display.</br>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.1.9. <i>Summary</i>: In this box, the number of identified CSMs will be displayed as well as the calculated FDR.</br><br/>
-      &emsp;&emsp;2.3.1.2. <b><i>Residue Pair level</i></b>: On this tab, the residue pairs will be displayed according to the specified filter parameters (<b>Figure 13</b>).</br>
+      &emsp;&emsp;2.3.1.1. <b><i>2D Map</i></b>: In this tab (<b>Figure 9</b>), the CSMs are displayed according to the specified filter parameters.</br>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.1.1 <i>Score</i>: Specify the score cutoff. All CSMs with a score greater than ‘<i>Score</i>’ will be displayed.</br>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.1.2 <i>Search</i>: Type the &alpha; or/and &beta; peptide (separated by <i>'-'</i>) as well as the protein 1 or/and protein 2 (separated by <i>'-'</i>), or even gene 1 or/and gene 2 (separated by <i>'-'</i>) to be displayed. <i>PS: Type at least four characters</i>.</br>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.1.3 <i>Show inter-protein links only</i>: Check this option to display only the identifications that belong to inter-protein interactions.<br/>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.1.4 <i>Zoom</i>: Zoom in or out on the proteins.<br/><br/>
+      &emsp;&emsp;2.3.1.2. <b><i>CSM level</i></b>: In this tab (<b>Figure 11</b>), the CSMs are displayed according to the specified filter parameters.</br>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.2.1 <i>Scan</i>: Specify the scan number to be displayed.</br>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.2.2 <i>Score</i>: Specify the score cutoff. All CSMs with a score greater than ‘<i>Score</i>’ will be displayed.</br>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.2.3 <i>Search</i>: Type the &alpha; or/and &beta; peptide (separated by <i>'-'</i>) as well as the protein 1 or/and protein 2 (separated by <i>'-'</i>), or even gene 1 or/and gene 2 (separated by <i>'-'</i>) to be displayed. <i>PS: Type at least four characters</i>.</br>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.2.4 <i>Files</i>: Select the file(s) that the results to be displayed belong to. If no files or ‘<i>All files</i>’ is selected, all results will be displayed.</br>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.2.5 <i>Show inter-protein links only</i>: Check this option to display only the CSMs that belong to inter-protein interactions.</br>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.2.6 <i>Show decoys</i>: Check this option to display decoy identifications.</br>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.2.7 Click on ‘<i>Filter</i>’ button or press <i>Enter</i> to perform the filter.</br>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.2.8 Click on ‘<i>Reset</i>’ button to restore default result display.</br>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.2.9. <i>Summary</i>: In this box, the number of identified CSMs will be displayed as well as the calculated FDR.</br><br/>
+      &emsp;&emsp;2.3.1.3. <b><i>Residue Pair level</i></b>: On this tab, the residue pairs will be displayed according to the specified filter parameters (<b>Figure 13</b>).</br>
       <p align="center"><br/><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/1eaa24e7-20f4-482a-9b4f-ebbaa209065a"><br/>
       <b>Figure 13: Residue Pairs tab</b></p>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.2.1 <i>Score</i>: Specify the score cutoff. All Residue Pairs with a score greater than ‘Score’ will be displayed.<br/>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.2.2 <i>Search</i>: Type the &alpha; or/and &beta; (separated by <i>'-'</i>) peptide as well as the protein 1 or/and protein 2 (separated by <i>'-'</i>) or even gene 1 or/and gene 2 (separated by <i>'-'</i>) to be displayed. <i>PS: Type at least four characters.</i><br/>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.2.3 <i>Show inter-protein links only</i>: Check this option to display only the Residue Pairs that belong to inter-protein interactions.<br/>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.2.4 <i>Show decoys</i>: Check this option to display decoy identifications.<br/>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.2.5 Click on ‘<i>Filter</i>’ button or press <i>Enter</i> to perform the filter.<br/>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.2.6 Click on ‘<i>Reset</i>’ button to restore the results.<br/>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.2.7. <i>Summary</i>: In this box, the number of identified Residue Pairs will be displayed as well as the calculated FDR.<br/><br/>
-      &emsp;&emsp;2.3.1.3. <b><i>PPI level</i></b>: On this tab, the PPIs will be displayed according to the specified filter parameters (<b>Figure 14</b>)
+      &emsp;&emsp;&emsp;&emsp;2.3.1.3.1 <i>Score</i>: Specify the score cutoff. All Residue Pairs with a score greater than ‘Score’ will be displayed.<br/>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.3.2 <i>Search</i>: Type the &alpha; or/and &beta; (separated by <i>'-'</i>) peptide as well as the protein 1 or/and protein 2 (separated by <i>'-'</i>) or even gene 1 or/and gene 2 (separated by <i>'-'</i>) to be displayed. <i>PS: Type at least four characters.</i><br/>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.3.3 <i>Show inter-protein links only</i>: Check this option to display only the Residue Pairs that belong to inter-protein interactions.<br/>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.3.4 <i>Show decoys</i>: Check this option to display decoy identifications.<br/>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.3.5 Click on ‘<i>Filter</i>’ button or press <i>Enter</i> to perform the filter.<br/>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.3.6 Click on ‘<i>Reset</i>’ button to restore the results.<br/>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.3.7. <i>Summary</i>: In this box, the number of identified Residue Pairs will be displayed as well as the calculated FDR.<br/><br/>
+      &emsp;&emsp;2.3.1.4. <b><i>PPI level</i></b>: On this tab, the PPIs will be displayed according to the specified filter parameters (<b>Figure 14</b>)
       <p align="center"><br/><img width="55%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/d79c669f-b8e5-4323-93d2-b3999644e6dc"><br/>
       <b>Figure 14: PPIs tab</b></p>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.3.1 <i>Score</i>: Specify the score cutoff. All PPIs with a score greater than ‘<i>Score</i>’ will be displayed.<br/>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.3.2 <i>Search</i>: Type protein 1 or/and protein 2 (separated by <i>'-'</i>) as well as gene 1 or/and gene 2 (separated by <i>'-'</i>) to be displayed. <i>PS: Type at least four characters.</i><br/>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.3.3 <i>Show inter-protein links only</i>: Check this option to display only the identifications that belong to inter-protein interactions.<br/>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.3.4 <i>Show decoys</i>: Check this option to display decoy identifications.<br/>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.3.5 <i>Group PPIs by gene</i>: Check this option to group all protein-protein interactions by gene name.<br/>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.3.6 Click on ‘<i>Filter</i>’ button or press <i>Enter</i> to filter the results.<br/>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.3.7 Click on ‘<i>Reset</i>’ button to restore the results.<br/>
-      &emsp;&emsp;&emsp;&emsp;2.3.1.3.8. <i>Summary</i>: in this box, the number of identified PPIs will be displayed as well as the calculated FDR.<br/><br/>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.4.1 <i>Score</i>: Specify the score cutoff. All PPIs with a score greater than ‘<i>Score</i>’ will be displayed.<br/>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.4.2 <i>Search</i>: Type protein 1 or/and protein 2 (separated by <i>'-'</i>) as well as gene 1 or/and gene 2 (separated by <i>'-'</i>) to be displayed. <i>PS: Type at least four characters.</i><br/>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.4.3 <i>Show inter-protein links only</i>: Check this option to display only the identifications that belong to inter-protein interactions.<br/>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.4.4 <i>Show decoys</i>: Check this option to display decoy identifications.<br/>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.4.5 <i>Group PPIs by gene</i>: Check this option to group all protein-protein interactions by gene name.<br/>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.4.6 Click on ‘<i>Filter</i>’ button or press <i>Enter</i> to filter the results.<br/>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.4.7 Click on ‘<i>Reset</i>’ button to restore the results.<br/>
+      &emsp;&emsp;&emsp;&emsp;2.3.1.4.8. <i>Summary</i>: in this box, the number of identified PPIs will be displayed as well as the calculated FDR.<br/><br/>
       <div id="ref_2_3_2">&emsp;&emsp;2.3.2 <b><i>Parameters</i></b>: Both search and post processing parameters used in the search can be visualized on this tab. (<b>Figure 15a and b</b>)</div>
       <p align="center"><br/><img width="30%" alt="image" src="https://github.com/diogobor/Scout/assets/7681148/bb7bb3b4-1a8f-44e6-afea-d2a457c70212">&emsp;<img width="29.95%" alt="image" src="https://github.com/user-attachments/assets/a1e6e959-77ee-4ab5-968c-d9067815c471"><br/>
       <b>Figure 15: Search and post processing parameters can be visualized on this tab (Figure 15a and 15b, respectively).</b></p>
