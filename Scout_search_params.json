@@ -60,7 +60,8 @@
     "WholeTag": "Full",
     "WholeMass": 158.00376533,
     "DeltaShift": 31.972071169999992,
-    "Targets": "KSYT",
+    "AlphaTargets": "KSYT",
+    "BetaTargets": "KSYT",
     "TargetNTerm": true
   },
   "FullPairsOnly": false,
@@ -219,5 +220,7 @@
   "StarIntensity": 0.7,
   "FastaDistinctByLocus": true,
   "ApplyQuantileIntensityThreshold": false,
-  "QuantileIntensityThreshold": 0.3
+  "QuantileIntensityThreshold": 0.3,
+  "BrukerPreProcessingAnalysis": true
+
 }
