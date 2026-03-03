@@ -334,7 +334,7 @@ _Clasen, MA, et al., [“Proteome-scale recombinant standards and a robust high-
      &emsp;&emsp;2.6.2.3 Give permission to <i>run_scout.sh</i><br/>
      &emsp;&emsp;&emsp;2.6.2.3.1 To do so, type <code>chmod +x run_scout.sh</code> and press enter.<br/>
      &emsp;&emsp;2.6.2.4 To start a search, the following arguments are required:<br/>
-     &emsp;&emsp;&emsp;2.6.2.4.1 <code>./run_scout.sh -search search_params_file.json filter_params_file.json</code>.<br/>
+     &emsp;&emsp;&emsp;2.6.2.4.1 <code>./run_scout.sh -search <-no_filter> search_params_file.json filter_params_file.json</code>.<br/>
      &emsp;&emsp;&emsp;2.6.2.4.2 Instructions similar to <a href="#ref_2_6_1_2_1_1">2.6.1.2.1.1</a>.<br/></br>
      &emsp;&emsp;&emsp;&#8658; <b><i>Once the search starts, a log file is generated in the output folder.</i></b><br/><br/>
      &emsp;&emsp;&emsp;&#8658; <i>In the end, four files will be generated: filtered_csms.csv, filtered_looplinks.csv, filtered_residue_pairs.csv and filtered_ppis.csv.</i><br/><br/>
